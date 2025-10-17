@@ -86,6 +86,7 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID
 85,Carregador wireless fast charge,55,70,5,Carregador Fast Wireless,1
 86,Fone de ouvido com noise canceling,60,210,1,Fone Noise Cancel,1
 87,Capinha com cooler integrado,25,80,2,Capinha Cooler,1
+88,Caixa de som vintage style,30,130,3,Caixa Som Vintage,1
 89,Película anti-static,140,19,4,Película Anti-Static,1
 90,Carregador multi-port 100W,20,150,5,Carregador Multi,1
 91,Fone de ouvido esportivo neckband,70,100,1,Fone Sport Neck,1

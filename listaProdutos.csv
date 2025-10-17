@@ -1,0 +1,100 @@
+ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID
+1,Fone de ouvido com cancelamento de ruído ativo,50,250,1,Fone Bluetooth Elite,1
+2,Capinha silicone resistente a impactos,100,25,2,Capinha Protetora X,1
+3,Caixa de som portátil à prova d'água,30,180,3,Caixa Som Bluetooth Pro,1
+4,Película de vidro temperado 9H,200,15,4,Película Vidro 3D,1
+5,Carregador rápido 20W PD,80,40,5,Carregador Turbo,1
+6,Fone de ouvido esportivo à prova d'água,60,120,1,Fone Esportivo Fit,1
+7,Capinha transparente com design slim,150,20,2,Capinha Ultra Slim,1
+8,Caixa de som com luzes LED,25,220,3,Caixa Som Party,1
+9,Película hidrogel anti-riscos,180,12,4,Película Hidrogel,1
+10,Carregador wireless 15W,45,80,5,Carregador Sem Fio,1
+11,Fone de ouvido com estojo de carga,70,300,1,Fone True Wireless,1
+12,Capinha couro genuíno,40,60,2,Capinha Couro Elegant,1
+13,Caixa de som mini portátil,90,100,3,Caixa Som Mini,1
+14,Película matte anti-reflexo,120,18,4,Película Matte,1
+15,Carregador veicular 30W,55,35,5,Carregador Carro,1
+16,Fone de ouvido over-ear com áudio surround,20,400,1,Fone Studio Pro,1
+17,Capinha bumper com suporte,110,30,2,Capinha Bumper,1
+18,Caixa de som rugged à prova de choque,35,150,3,Caixa Som Outdoor,1
+19,Película privacidade 360°,95,22,4,Película Privacidade,1
+20,Carregador portátil 10000mAh,60,120,5,Power Bank Turbo,1
+21,Fone de ouvido com mic cancelamento de ruído,85,180,1,Fone Call Pro,1
+22,Capinha glitter personalizável,75,28,2,Capinha Glitter,1
+23,Caixa de som com assistente virtual,15,320,3,Caixa Som Smart,1
+24,Película curva completa,130,20,4,Película Full Cover,1
+25,Cabo USB-C 2m rápido,200,25,5,Cabo USB-C Turbo,1
+26,Fone de ouvido bass boost,45,90,1,Fone Bass Pro,1
+27,Capinha capa dura com impressão,65,35,2,Capinha Premium,1
+28,Caixa de som stereo dual,40,200,3,Caixa Som Stereo,1
+29,Película nano anti-bacteriana,140,16,4,Película Nano,1
+30,Carregador dual port 45W,50,65,5,Carregador Dual,1
+31,Fone de ouvido gaming RGB,30,220,1,Fone Gaming Pro,1
+32,Capinha silicone texturizada,160,18,2,Capinha Grip,1
+33,Caixa de som compacta,70,85,3,Caixa Som Compact,1
+34,Película glass 4D,110,24,4,Película 4D Glass,1
+35,Carregador magnético wireless,40,75,5,Carregador Magnetic,1
+36,Fone de ouvido neckband,55,110,1,Fone Neckband,1
+37,Capinha com anel suporte,85,32,2,Capinha Ring,1
+38,Caixa de som com powerbank,25,180,3,Caixa Som Power,1
+39,Película anti-espionagem,100,28,4,Película SpyGuard,1
+40,Cabo Lightning 1m,180,20,5,Cabo Lightning,1
+41,Fone de ouvido retro,15,150,1,Fone Retro,1
+42,Capinha transparente colorida,135,15,2,Capinha Color,1
+43,Caixa de som flutuante,10,280,3,Caixa Som Float,1
+44,Película self-healing,90,30,4,Película Self-Heal,1
+45,Carregador wireless stand,35,95,5,Carregador Stand,1
+46,Fone de ouvido com ANC,50,270,1,Fone ANC Pro,1
+47,Capinha militar resistente,70,40,2,Capinha Military,1
+48,Caixa de som com karaokê,20,240,3,Caixa Som Karaoke,1
+49,Película curved edge,125,19,4,Película Curved,1
+50,Carregador GaN 65W,30,110,5,Carregador GaN,1
+51,Fone de ouvido esportivo wireless,65,130,1,Fone Sport Wireless,1
+52,Capinha book estilo carteira,45,55,2,Capinha Book,1
+53,Caixa de som showerproof,40,160,3,Caixa Som Shower,1
+54,Película anti-blue light,155,21,4,Película Blue Light,1
+55,Carregador solar portátil,15,200,5,Carregador Solar,1
+56,Fone de ouvido com estilete,25,190,1,Fone Stylus,1
+57,Capinha com pedestal,80,38,2,Capinha Stand,1
+58,Caixa de som mini rugged,60,120,3,Caixa Som Mini Rug,1
+59,Película matte anti-fingerprint,140,17,4,Película Anti-Finger,1
+60,Carregador wireless duo,50,85,5,Carregador Duo,1
+61,Fone de ouvido com tradução,10,350,1,Fone Translator,1
+62,Capinha silicone adesiva,170,14,2,Capinha Sticky,1
+63,Caixa de som com alarme,35,95,3,Caixa Som Alarm,1
+64,Película 9H full glue,115,26,4,Película Full Glue,1
+65,Cabo USB-C 90° angled,145,22,5,Cabo Angled,1
+66,Fone de ouvido open-ear,40,160,1,Fone Open-Ear,1
+67,Capinha com lente zoom,20,70,2,Capinha Zoom,1
+68,Caixa de som com FM radio,55,110,3,Caixa Som FM,1
+69,Película privacy glass,105,29,4,Película Privacy Glass,1
+70,Carregador wireless car mount,40,78,5,Carregador Car Mount,1
+71,Fone de ouvido com heart rate,30,240,1,Fone Health,1
+72,Capinha eco-friendly biodegradável,90,33,2,Capinha Eco,1
+73,Caixa de som 360° sound,25,300,3,Caixa Som 360,1
+74,Película anti-glare,135,23,4,Película Anti-Glare,1
+75,Carregador desk dock,35,120,5,Carregador Dock,1
+76,Fone de ouvido modular,50,180,1,Fone Modular,1
+77,Capinha com tela integrada,15,150,2,Capinha Smart,1
+78,Caixa de som ultra-slim,60,140,3,Caixa Som Slim,1
+79,Película matte anti-smudge,160,18,4,Película Anti-Smudge,1
+80,Carregador wireless power pad,45,90,5,Carregador Pad,1
+81,Fone de ouvido com gesture control,35,290,1,Fone Gesture,1
+82,Capinha anti-roubo,75,42,2,Capinha Anti-Theft,1
+83,Caixa de som com equalizer,40,170,3,Caixa Som EQ,1
+84,Película liquid crystal,110,31,4,Película Crystal,1
+85,Carregador wireless fast charge,55,70,5,Carregador Fast Wireless,1
+86,Fone de ouvido com noise canceling,60,210,1,Fone Noise Cancel,1
+87,Capinha com cooler integrado,25,80,2,Capinha Cooler,1
+89,Película anti-static,140,19,4,Película Anti-Static,1
+90,Carregador multi-port 100W,20,150,5,Carregador Multi,1
+91,Fone de ouvido esportivo neckband,70,100,1,Fone Sport Neck,1
+92,Capinha com armazenamento,50,45,2,Capinha Storage,1
+93,Caixa de som com app control,35,190,3,Caixa Som App,1
+94,Película nano glass,125,27,4,Película Nano Glass,1
+95,Carregador wireless magnetic stand,40,88,5,Carregador Magnetic Stand,1
+96,Fone de ouvido com spatial audio,25,320,1,Fone Spatial,1
+97,Capinha com suporte para caneta,65,37,2,Capinha Pen Holder,1
+98,Caixa de som flutuante levitation,10,400,3,Caixa Som Levitation,1
+99,Película anti-microbial,155,25,4,Película Antimicrobial,1
+100,Carregador wireless charging box,30,130,5,Carregador Box,1

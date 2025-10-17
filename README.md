@@ -31,7 +31,5 @@ COMO EXECUTAR
     python Main.py
     Siga as instruções do menu para interagir com o módulo de produtos.
 
-AUTOR
 
-Desenvolvido por Yan Neves.
-Perfil no GitHub: https://github.com/yan-dhsk
+Desenvolvido por [Yan Neves](https://github.com/yan-dhsk)

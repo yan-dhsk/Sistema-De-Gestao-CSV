@@ -8,7 +8,7 @@ Foi realizada uma pesquisa de campo em lojas do centro de Caruaru para identific
 
 DIAGRAMA DE CLASSE
 
-![Diagrama de Classes](docs/Diagrama de classe.jpg)
+![Diagrama de Classes](docs/Diagrama-de-classe.jpg)
 
 
 FUNCIONALIDADES

@@ -1,28 +1,36 @@
 SOBRE O SISTEMA
 
-Este projeto é um sistema de gestão empresarial completo, desenvolvido como meu primeiro grande projeto durante o 2º período da minha graduação em Sistemas de Informação. A aplicação, feita em Python, foi planejada para ser modular e escalável. Atualmente, seu módulo principal de controle de produtos está totalmente funcional, utilizando um arquivo CSV como base de dados leve e portátil.
+Este projeto é um sistema de gestão desenvolvido durante o 2º período da graduação em Sistemas de Informação. A aplicação, desenvolvida em Python, foi planejada para ser modular e escalável, com o intuito de auxiliar na tomada de decisão no âmbito administrativo de pequenas lojas.
 
-OBJETIVO
+METODOLOGIA
 
-O objetivo foi planejar a arquitetura de um sistema de gestão abrangente e implementar seu módulo central de produtos como prova de conceito. O desenvolvimento buscou aplicar e consolidar conhecimentos essenciais de programação, como a arquitetura de software baseada em um diagrama de classes previamente feito, a programação modularizada para separar as camadas de lógica e apresentação, a persistência de dados em arquivos CSV, a implementação da lógica de negócio para operações CRUD e a criação de uma interface de usuário interativa via linha de comando.
+Foi realizada uma pesquisa de campo em lojas do centro de Caruaru para identificar estabelecimentos que enfrentavam dificuldades devido à falta de um sistema de gestão. Por meio de entrevistas, foi elaborado um diagrama de classes para análise de viabilidade e planejamento do sistema. O sistema foi estruturado de forma modular, com cada classe implementada em um arquivo separado, funcionando como um CRUD, e todos interconectados por um arquivo principal (`Main.py`). Os dados são armazenados em arquivos CSV, visando facilitar a futura integração com softwares como Excel e Power BI, ferramentas já utilizadas pela lojas entrevistada.
+
+DIAGRAMA DE CLASSE
+
+![Diagrama de Classes](docs/Diagrama-de-classe.png)
+
+
+FUNCIONALIDADES
+
+- Gestão de Produtos (implementado) - Cadastro e consulta de produtos, com catálogo informando preço, quantidade, produtos mais e menos vendidos, função de busca, etc.
+
+- Registro de Vendas (em desenvolvimento) - Registro de vendas de produtos, incluindo método de pagamento, data, cliente etc.
+
+- Cadastro de Clientes (em desenvolvimento) - Base de dados de clientes com histórico de compras individual.
+
+- Controle Financeiro (em desenvolvimento) - Registro de despesas e cálculo de lucros.
+
+- Sistema de Relatórios (em desenvolvimento) - Análise de vendas e geração de dados em CSV para futura elaboração de dashboards e relatórios no Power BI.
+
+- Backup de Dados (em desenvolvimento) - Backup em nuvem dos arquivos Csv.
 
 TECNOLOGIAS UTILIZADAS
-
     Python 3
     Módulo nativo 'csv'
     Git e GitHub
 
-ESTRUTURA DO PROJETO
-
-/
-|-- Main.py (Camada de Apresentação e interação com o usuário).
-|-- CRUD_produto.py (Camada de Dados para o módulo de produtos).
-|-- listaProdutos.csv (Base de dados do módulo de produtos).
-|-- .gitignore (Arquivo para ignorar arquivos de cache).
-|-- README.md (Documentação do projeto).
-
 COMO EXECUTAR
-
     Clone o repositório:
     git clone https://github.com/yan-dhsk/Sistema-De-Gestao-CSV.git
     Navegue até o diretório do projeto:
@@ -31,5 +39,6 @@ COMO EXECUTAR
     python Main.py
     Siga as instruções do menu para interagir com o módulo de produtos.
 
-
-Desenvolvido por [Yan Neves](https://github.com/yan-dhsk)
+COLABORADORES
+[Yan Neves](https://github.com/yan-dhsk)
+[Vinicius Meneses](https://github.com/viniciusmeneses-maker)

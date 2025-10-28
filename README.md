@@ -12,7 +12,6 @@ DIAGRAMA DE CLASSE
 
 
 FUNCIONALIDADES
-
 - Gestão de Produtos (implementado) - Cadastro e consulta de produtos, com catálogo informando preço, quantidade, produtos mais e menos vendidos, função de busca, etc.
 
 - Registro de Vendas (em desenvolvimento) - Registro de vendas de produtos, incluindo método de pagamento, data, cliente etc.
@@ -26,18 +25,18 @@ FUNCIONALIDADES
 - Backup de Dados (em desenvolvimento) - Backup em nuvem dos arquivos Csv.
 
 TECNOLOGIAS UTILIZADAS
-    Python 3
-    Módulo nativo 'csv'
-    Git e GitHub
+- Python 3
+- Módulo nativo 'csv'
+- Git e GitHub
 
 COMO EXECUTAR
-    Clone o repositório:
-    git clone https://github.com/yan-dhsk/Sistema-De-Gestao-CSV.git
-    Navegue até o diretório do projeto:
-    cd Sistema-De-Gestao-CSV
-    Execute o script principal:
-    python Main.py
-    Siga as instruções do menu para interagir com o módulo de produtos.
+- Clone o repositório: git clone https://github.com/yan-dhsk/Sistema-De-Gestao-CSV.git
+
+- Navegue até o diretório do projeto: cd Sistema-De-Gestao-CSV
+
+- Execute o script principal: python Main.py
+
+- Siga as instruções do menu para interagir com o módulo de produtos.
 
 COLABORADORES
 - [Yan Neves](https://github.com/yan-dhsk)

@@ -40,5 +40,5 @@ COMO EXECUTAR
     Siga as instruções do menu para interagir com o módulo de produtos.
 
 COLABORADORES
-[Yan Neves](https://github.com/yan-dhsk)
-[Vinicius Meneses](https://github.com/viniciusmeneses-maker)
+- [Yan Neves](https://github.com/yan-dhsk)
+- [Vinicius Meneses](https://github.com/viniciusmeneses-maker)

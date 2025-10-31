@@ -1,4 +1,4 @@
-SOBRE O SISTEMA
+SOBRE O SISTEMA 
 
 Este projeto é um sistema de gestão desenvolvido durante o 2º período da graduação em Sistemas de Informação. A aplicação, desenvolvida em Python, foi planejada para ser modular e escalável, com o intuito de auxiliar na tomada de decisão no âmbito administrativo de pequenas lojas.
 

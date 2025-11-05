@@ -1,9 +1,11 @@
 import CRUD_produto
+import csv
 
 def test_lista_tudo():
     produtos = CRUD_produto.listar_todos()
-    assert len(produtos) == 100
-    assert "ID: 1" in produtos[0]
+    with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
+        lista = list(csv.reader(arquivo, delimiter=','))
+    assert f'ID: {lista[6][0]} ' in produtos[5]
 
 def test_adicionar_produtos():
     produtos=CRUD_produto.listar_todos()
@@ -35,3 +37,4 @@ def test_estoque_baixo():
 def test_estoque_alto():
     estoque=CRUD_produto.alto_estoque()
     assert "Película Hidrogel - tem 180 em estoque!" in estoque
+

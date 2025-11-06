@@ -9,7 +9,6 @@ def test_lista_tudo():
     assert len(lista)-1 == len(produtos)
 
 def test_adicionar_produtos():
-    produtos=CRUD_produto.listar_todos()
     produto=["fone","2","5","1","fone bluetooth","1"]
     id=CRUD_produto.adicionar_produto(produto)
     with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:

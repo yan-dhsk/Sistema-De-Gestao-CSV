@@ -9,7 +9,6 @@ def test_lista_tudo():
     assert len(lista)-1 == len(produtos)
 
 def test_adicionar_produtos():
-    produtos=CRUD_produto.listar_todos()
     produto=["fone","2","5","1","fone bluetooth","1"]
     id=CRUD_produto.adicionar_produto(produto)
     with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
@@ -42,16 +41,13 @@ def test_estoque_baixo():
     estoque=CRUD_produto.baixo_estoque()
     n1=(estoque[0][len(estoque[0])-14])
     n2=(estoque[0][len(estoque[0])-13])
-    num=int(n1+n2)
-    print(num)
+    num=int(n1+n2)
     assert num < 30
 
 def test_estoque_alto():
-    estoque=CRUD_produto.alto_estoque()
-    print(f"{estoque}\n")
+    estoque=CRUD_produto.alto_estoque()
     n1=(estoque[0][len(estoque[0])-15])
     n2=(estoque[0][len(estoque[0])-14])
     n3=(estoque[0][len(estoque[0])-13])
-    num=int(n1+n2+n3)
-    print(num)
+    num=int(n1+n2+n3)
     assert num > 100

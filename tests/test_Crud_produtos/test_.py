@@ -45,8 +45,7 @@ def test_estoque_baixo():
     assert num < 30
 
 def test_estoque_alto():
-    estoque=CRUD_produto.alto_estoque()
-    print(f"{estoque}\n")
+    estoque=CRUD_produto.alto_estoque()
     n1=(estoque[0][len(estoque[0])-15])
     n2=(estoque[0][len(estoque[0])-14])
     n3=(estoque[0][len(estoque[0])-13])

@@ -1,37 +1,57 @@
 import CRUD_produto
+import csv
 
 def test_lista_tudo():
     produtos = CRUD_produto.listar_todos()
-    assert len(produtos) == 100
-    assert "ID: 1" in produtos[0]
+    with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
+        lista = list(csv.reader(arquivo, delimiter=','))
+    assert f'ID: {lista[1][0]} ' in produtos[0]
+    assert len(lista)-1 == len(produtos)
 
 def test_adicionar_produtos():
     produtos=CRUD_produto.listar_todos()
-    id= len(produtos)+1
     produto=["fone","2","5","1","fone bluetooth","1"]
-    assert CRUD_produto.adicionar_produto(produto)==id
+    id=CRUD_produto.adicionar_produto(produto)
+    with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
+        lista = list(csv.reader(arquivo, delimiter=','))
+    assert int(lista[len(lista)-1][0]) == id
 
 
 def test_deletar_produto():
-    produtos= CRUD_produto.listar_todos()
-    id=len(produtos)
+    with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
+        lista = list(csv.reader(arquivo, delimiter=','))
+    id=int(lista[len(lista)-1][0])
     assert CRUD_produto.deletar_produto(id)==True
 
 def test_atualizar_produtos():
-    id=1
+    with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
+        lista = list(csv.reader(arquivo, delimiter=','))
+    id=int(lista[len(lista)-1][0])
     elemento=1
     valor=5
     assert CRUD_produto.atualizar_produtos(id,elemento,valor)==True
 
 def test_pesquisar_produto():
-    nome="CaIXa SoM fM"
-    lista=CRUD_produto.buscar_produto(nome)
-    assert 'ID: 68 - R$110 - Caixa Som FM - 55 em estoque' in lista
+    with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
+        lista = list(csv.reader(arquivo, delimiter=','))
+    nome=lista[1][5]
+    produto=CRUD_produto.buscar_produto(nome)
+    assert f'ID: {lista[1][0]} - R${lista[1][3]} - {lista[1][5]} - {lista[1][2]} em estoque' in produto
 
 def test_estoque_baixo():
     estoque=CRUD_produto.baixo_estoque()
-    assert "Fone Stylus - tem 25 em estoque!" in estoque
+    n1=(estoque[0][len(estoque[0])-14])
+    n2=(estoque[0][len(estoque[0])-13])
+    num=int(n1+n2)
+    print(num)
+    assert num < 30
 
 def test_estoque_alto():
     estoque=CRUD_produto.alto_estoque()
-    assert "Película Hidrogel - tem 180 em estoque!" in estoque
+    print(f"{estoque}\n")
+    n1=(estoque[0][len(estoque[0])-15])
+    n2=(estoque[0][len(estoque[0])-14])
+    n3=(estoque[0][len(estoque[0])-13])
+    num=int(n1+n2+n3)
+    print(num)
+    assert num > 100

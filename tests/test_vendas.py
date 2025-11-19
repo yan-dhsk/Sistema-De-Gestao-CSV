@@ -3,7 +3,7 @@ import csv
 import os
 import datetime
 
-from modulo_vendas import registrar_venda, alterar_venda, pesquisar_vendas_nome
+from modulo_vendas import registrar_venda, alterar_venda, pesquisar_vendas_nome, remover_venda, listar_vendas
 
 @pytest.fixture
 def setup_csvs_temporarios():
@@ -250,3 +250,53 @@ def test_pesquisar_nome_vazio(setup_csvs_temporarios):
     resultados = pesquisar_vendas_nome("Produto Inexistente", arquivos["vendas"])
     
     assert resultados == []
+
+
+# A função deve retornar True. A venda ID 1 deve ser removida do CSV e o estoque do Produto 1 deve aumentar para 48 (43 + 5 devolvidos).
+def test_remover_venda_sucesso(setup_csvs_temporarios):
+    arquivos = setup_csvs_temporarios
+    
+    resultado = remover_venda(1, arquivos["produtos"], arquivos["vendas"])
+    
+    assert resultado == True
+    
+    with open(arquivos["vendas"], 'r', encoding='utf-8') as f:
+        vendas = list(csv.reader(f))
+    
+    assert len(vendas) == 2
+    
+    ids_existentes = [linha[0] for linha in vendas if linha[0] != 'VendaID']
+    assert "1" not in ids_existentes
+    assert "2" in ids_existentes
+
+    with open(arquivos["produtos"], 'r', encoding='utf-8') as f:
+        produtos = list(csv.reader(f))
+    produto_fone = produtos[1]
+    
+    assert produto_fone[2] == '48' 
+
+
+# A função deve retornar False se tentarmos remover um ID que não existe.
+def test_remover_venda_falha(setup_csvs_temporarios):
+    arquivos = setup_csvs_temporarios
+    
+    resultado = remover_venda(999, arquivos["produtos"], arquivos["vendas"])
+    
+    assert resultado == False
+    
+    with open(arquivos["vendas"], 'r', encoding='utf-8') as f:
+        vendas = list(csv.reader(f))
+    assert len(vendas) == 3 
+
+
+# A função deve retornar uma lista contendo todas as 2 vendas registradas.
+def test_listar_todas_vendas(setup_csvs_temporarios):
+    arquivos = setup_csvs_temporarios
+    
+    resultados = listar_vendas(arquivos["vendas"])
+    
+    assert isinstance(resultados, list)
+    assert len(resultados) == 2
+    
+    assert "Venda ID: 1" in resultados[0] or "Venda ID: 1" in resultados[1]
+    assert "Venda ID: 2" in resultados[0] or "Venda ID: 2" in resultados[1]

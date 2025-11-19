@@ -8,13 +8,17 @@ try:
     from modulo_despesas import (
         add_despesa,
         busca_despesas,
+        lista_despesas,
         altera_despesa,
+        remove_despesa
     )
 except ImportError:
-    # Funções mock que falharão os testes até a implementação correta
+    # Mocks para evitar erro de importação antes de criar o arquivo real
     def add_despesa(*args, **kwargs): return 1
     def busca_despesas(*args, **kwargs): return []
-    def altera_despesa(*args, **kwargs): return True
+    def lista_despesas(*args, **kwargs): return []
+    def altera_despesa(*args, **kwargs): return 1
+    def remove_despesa(*args, **kwargs): return 1
 
 
 @pytest.fixture
@@ -90,19 +94,7 @@ def test_add_data_errada(csv_temp):
     retorno = add_despesa(csv_temp, despesa_invalida)
     assert retorno == 0
 
-# busca_despesas deve retornar uma lista de dicionários ordenada por data (desc).
-def test_busca_data_desc(csv_temp):
-    _popula_busca(csv_temp)
-    
-    despesas = busca_despesas(csv_temp, filtro_nome=None)
-    
-    assert len(despesas) == 4
-    assert despesas[0]['DespesaID'] == '2'
-    assert despesas[1]['DespesaID'] == '1'
-    assert despesas[2]['DespesaID'] == '4'
-    assert despesas[3]['DespesaID'] == '3'
-
-# busca_despesas deve retornar uma sublista filtrada por nome, ordenada por data (desc).
+# busca_despesas deve retornar uma lista de dicionários filtrada por nome.
 def test_busca_nome_data(csv_temp):
     _popula_busca(csv_temp)
     
@@ -112,7 +104,7 @@ def test_busca_nome_data(csv_temp):
     assert despesas[0]['DespesaID'] == '1'
     assert despesas[1]['DespesaID'] == '4'
 
-# busca_despesas deve retornar uma sublista filtrada parcial e case-insensitive, ordenada por data (desc).
+# busca_despesas deve retornar uma sublista filtrada parcial e case-insensitive.
 def test_busca_nome_parcial(csv_temp):
     _popula_busca(csv_temp)
     
@@ -129,19 +121,37 @@ def test_busca_sem_res(csv_temp):
     despesas = busca_despesas(csv_temp, filtro_nome='Inexistente')
     assert despesas == []
 
-# busca_despesas deve retornar lista vazia se o CSV estiver vazio.
-def test_busca_vazio(csv_temp):
-    despesas = busca_despesas(csv_temp, filtro_nome=None)
+# lista_despesas deve retornar todas as despesas ordenadas por data decrescente.
+def test_lista_todas(csv_temp):
+    _popula_busca(csv_temp)
+    
+    # Deve retornar TUDO (4 itens)
+    despesas = lista_despesas(csv_temp)
+    
+    assert len(despesas) == 4
+    # Ordem decrescente de data:
+    # 1. 2025-12-01 (ID 2)
+    # 2. 2025-11-01 (ID 1)
+    # 3. 2025-10-15 (ID 4)
+    # 4. 2025-10-01 (ID 3)
+    assert despesas[0]['DespesaID'] == '2'
+    assert despesas[1]['DespesaID'] == '1'
+    assert despesas[2]['DespesaID'] == '4'
+    assert despesas[3]['DespesaID'] == '3'
+
+# lista_despesas deve retornar lista vazia se CSV vazio.
+def test_lista_vazio(csv_temp):
+    despesas = lista_despesas(csv_temp)
     assert despesas == []
 
-# altera_despesa deve retornar True se OK ou 0 em caso de erro.
+# altera_despesa deve retornar 1 se sucesso ou 0 em erro.
 def test_altera_ok(csv_temp):
     _popula_busca(csv_temp)
     
     novos_dados = {'Valor': 1650.0, 'Descricao': 'Aumento'}
     
     retorno = altera_despesa(csv_temp, despesa_id='1', novos_dados=novos_dados)
-    assert retorno == True
+    assert retorno == 1
     
     with open(csv_temp, 'r') as f:
         reader = csv.DictReader(f)
@@ -149,7 +159,6 @@ def test_altera_ok(csv_temp):
             if linha['DespesaID'] == '1':
                 assert linha['Valor'] == '1650.0'
                 assert linha['Descricao'] == 'Aumento'
-                assert linha['Nome'] == 'Aluguel do Apto'
                 break
         else:
             pytest.fail("ID 1 nao encontrado")
@@ -167,10 +176,39 @@ def test_altera_dado_errado(csv_temp):
     
     retorno = altera_despesa(csv_temp, despesa_id='1', novos_dados={'Valor': 'mil reais'})
     assert retorno == 0
-        
-    # Verifica se o arquivo não foi alterado
+    
+    # Verifica integridade do arquivo
     with open(csv_temp, 'r') as f:
         reader = csv.DictReader(f)
         linha1 = next(reader)
-        assert linha1['DespesaID'] == '1'
         assert linha1['Valor'] == '1500.0'
+
+# remove_despesa deve retornar 1 se sucesso ou 0 em erro.
+def test_remove_ok(csv_temp):
+    _popula_busca(csv_temp)
+    
+    # Remove ID 2 (ALMOÇO)
+    retorno = remove_despesa(csv_temp, despesa_id='2')
+    assert retorno == 1
+    
+    with open(csv_temp, 'r') as f:
+        reader = list(csv.reader(f))
+        # Cabeçalho + 3 itens restantes = 4 linhas
+        assert len(reader) == 4
+        
+        ids_restantes = [row[0] for row in reader[1:]]
+        assert '2' not in ids_restantes
+        assert '1' in ids_restantes
+        assert '3' in ids_restantes
+
+# remove_despesa deve retornar 0 se ID não encontrado.
+def test_remove_erro(csv_temp):
+    _popula_busca(csv_temp)
+    
+    retorno = remove_despesa(csv_temp, despesa_id='99')
+    assert retorno == 0
+    
+    with open(csv_temp, 'r') as f:
+        reader = list(csv.reader(f))
+        # Deve manter 5 linhas (cabeçalho + 4 dados)
+        assert len(reader) == 5

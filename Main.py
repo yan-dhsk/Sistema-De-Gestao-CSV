@@ -1,9 +1,154 @@
 import CRUD_produto
+import datetime
+import modulo_vendas
 
 def vendas():
-    print("Sentimos muito, esta área ainda esta em desenvolvimento!")
-    print("==================================================================")
-    menu()
+    while True:
+        print("Bem-Vindo a seção de Vendas!")
+        escolha = input("1 - Registrar nova venda\n2 - Pesquisar venda\n3 - Remover venda\n4 - Atualizar venda\n5 - Consultar todas as vendas\n0 - Retornar ao menu principal\nPorfavor selecione sua opção: ")
+        escolha = escolha.strip()
+        if escolha.isdigit():
+            escolha = int(escolha)
+        else:
+            escolha = -1
+        if escolha == 0:
+            print("==================================================================")
+            menu()
+            break
+        elif escolha == 1:
+            novaVenda = [0]
+            produtoid = input("Digite o id do produto (zero se não souber): ")
+            produtoid = produtoid.strip()
+            if produtoid.isdigit():
+                produtoid = int(produtoid)
+            else:
+                produtoid = 0
+            preço = input("Digite o preço do produto (zero se não souber): ")
+            preço = preço.strip()
+            if preço.isdigit():
+                preço = int(preço)
+            else:
+                preço = 0
+            nomeProduto = input("Escreva o nome do produto: ")
+            if produtoid == 0:
+                resultados = CRUD_produto.buscar_produto(nomeProduto)
+                if not resultados:
+                    print("Nenhum produto com este nome cadastrado!")
+                    continue
+                else:
+                    if len(resultados) == 1:
+                        produtoid = int(resultados[0][0]) if len(resultados[0]) > 0 and str(resultados[0][0]).strip().isdigit() else 0
+                    else:
+                        print("==================================================================")
+                        for res in resultados:
+                            print(res)
+                        print("==================================================================")
+                        produtoid = input("Agora digite corretamente o id do produto (zero se não achar): ")
+                        produtoid = produtoid.strip()
+                        if produtoid.isdigit():
+                            produtoid = int(produtoid)
+                        else:
+                            produtoid = 0
+                        preço = input("Agora digite corretamente o preço do produto (zero se não achar): ")
+                        preço = preço.strip()
+                        if preço.isdigit():
+                            preço = int(preço)
+                        else:
+                            preço = 0
+            quantidade = input("Digite a quantidade vendida: ")
+            quantidade = quantidade.strip()
+            if quantidade.isdigit():
+                quantidade = int(quantidade)
+            else:
+                quantidade = 0
+            total = preço * quantidade
+            cliente = input("Digite o ID do cliente (zero se não cadastrado): ")
+            cliente = cliente.strip()
+            if cliente.isdigit():
+                cliente = int(cliente)
+            else:
+                cliente = 0
+            metodo = input("Digite o metodo de pagamento: ")
+            data = datetime.datetime.now().replace(microsecond=0)
+            novaVenda.append(produtoid)
+            novaVenda.append(nomeProduto)
+            novaVenda.append(quantidade)
+            novaVenda.append(preço)
+            novaVenda.append(total)
+            novaVenda.append(1)
+            novaVenda.append(cliente)
+            novaVenda.append(metodo)
+            novaVenda.append(data)
+            resultado = modulo_vendas.registrarVenda(novaVenda)
+            if resultado == 1:
+                print("Venda registrada com sucesso!")
+            elif resultado == 0:
+                print("Estoque insuficiente para concluir a venda!")
+            elif resultado == 2:
+                print("Produto não encontrado no cadastro!")
+            else:
+                print("Houve um problema ao registrar a venda!")
+            print("==================================================================")
+        elif escolha == 2:
+            pesquisa = input("Digite um parametro de pesquisa (nome do produto, data, metodo de pagamento): ")
+            encontradas = modulo_vendas.pesquisarVendas(pesquisa)
+            print("==================================================================")
+            if not encontradas:
+                print("Nenhuma venda encontrada!")
+            else:
+                for item_venda in encontradas:
+                    print(f"ID da venda: {item_venda[0] if len(item_venda)>0 else ''} - ID do produto: {item_venda[1] if len(item_venda)>1 else ''} - Nome: {item_venda[2] if len(item_venda)>2 else ''} - Preço: {item_venda[4] if len(item_venda)>4 else ''} - Quantidade: {item_venda[3] if len(item_venda)>3 else ''} - Valor total: {item_venda[5] if len(item_venda)>5 else ''} - Usuário: {item_venda[6] if len(item_venda)>6 else ''} - Cliente: {item_venda[7] if len(item_venda)>7 else ''} - Pagamento: {item_venda[8] if len(item_venda)>8 else ''} - Data: {item_venda[9] if len(item_venda)>9 else ''}")
+                    print("------------------------------------------------------------------")
+            print("==================================================================")
+        elif escolha == 3:
+            id = input("Digite o ID da venda (digite zero para voltar ao menu): ")
+            id = id.strip()
+            if id.isdigit():
+                id = int(id)
+            else:
+                id = 0
+            if id == 0:
+                print("Voltando para o menu de vendas...")
+                pass
+            else:
+                resultado = modulo_vendas.removerVenda(id)
+                if resultado == 0:
+                    print("Venda não encontrada!")
+                else:
+                    print("Venda removida com sucesso!")
+        elif escolha == 4:
+            escolha2 = input("Escolha o elemento da venda que deseja alterar!\n1 - ID do produto\n2 - Nome do produto\n3 - Quantidade\n4 - Preço unitario\n5 Preço total\n 6- ID do úsuario\n7 - ID do cliente\n8 - Metodo de pagamento\n9 - Data e horario\nSelecione sua opção: ")
+            escolha2 = escolha2.strip()
+            if escolha2.isdigit():
+                escolha2 = int(escolha2)
+            else:
+                escolha2 = -1
+            id = input("Digite o ID da venda (zero para voltar ao menu): ")
+            id = id.strip()
+            if id.isdigit():
+                id = int(id)
+            else:
+                id = 0
+            if id == 0:
+                print("Voltando para o menu de vendas...")
+                pass
+            novo = input("Digite o novo parametro: ")
+            resultado = modulo_vendas.alterarVenda(escolha2, id, novo)
+            if resultado == 1:
+                print("Venda alterada com sucesso!")
+                print("==================================================================")
+            else:
+                print("Houve um problema ao alterar a venda!")
+                print("==================================================================")
+        elif escolha == 5:
+            resultado = modulo_vendas.listarVendas()
+            for x in range(1, len(resultado)):
+                print("==================================================================")
+                print(f"ID da venda: {resultado[x][0] if len(resultado[x])>0 else ''} - ID do produto: {resultado[x][1] if len(resultado[x])>1 else ''} - Nome: {resultado[x][2] if len(resultado[x])>2 else ''} - Preço: {resultado[x][4] if len(resultado[x])>4 else ''} - Quantidade: {resultado[x][3] if len(resultado[x])>3 else ''} - Valor total: {resultado[x][5] if len(resultado[x])>5 else ''} - Usuário: {resultado[x][6] if len(resultado[x])>6 else ''} - Cliente: {resultado[x][7] if len(resultado[x])>7 else ''} - Pagamento: {resultado[x][8] if len(resultado[x])>8 else ''} - Data: {resultado[x][9] if len(resultado[x])>9 else ''}")
+            print("==================================================================")
+        else:
+            print("Opção Inválida!")
+            pass
 
 def relatorio():
     print("Sentimos muito, esta área ainda esta em desenvolvimento!")

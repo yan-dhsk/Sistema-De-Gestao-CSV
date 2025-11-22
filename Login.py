@@ -15,6 +15,7 @@ def login():
                 print("==================================================================")
                 return Main.menu()
     print("Usuario ou senha nao cadastrados!")
+    menu()
 
 
 def registrar():
@@ -54,3 +55,4 @@ def menu():
         print("Valor invalido")
         menu()
 menu()
+

@@ -1,6 +1,7 @@
 import CRUD_produto
 import datetime
 import modulo_vendas
+import Login
 
 def vendas():
     while True:
@@ -253,7 +254,7 @@ def produto():
         else:
             print("Escolha inválida!")
 
-def menu ():
+def menu():
     print("Olá, bem-vindo ao menu principal! Qual área você gostaria de acessar?")
     print("1 - Produtos\n2 - Vendas\n3 - Despesas\n4 - Relátorio\n5 - Backup\n0 - Encerrar")
     escolha = int(input("Porfavor selecione sua opção: "))
@@ -278,4 +279,4 @@ def menu ():
         print("Escolha inválida! Porfavor selecione uma opção válida!\n")
         menu()
 
-menu()
+Login

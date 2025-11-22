@@ -41,13 +41,16 @@ def test_estoque_baixo():
     estoque=CRUD_produto.baixo_estoque()
     n1=(estoque[0][len(estoque[0])-14])
     n2=(estoque[0][len(estoque[0])-13])
-    num=int(n1+n2)
+    num=int(n1+n2)
+
     assert num < 30
 
 def test_estoque_alto():
-    estoque=CRUD_produto.alto_estoque()
+    estoque=CRUD_produto.alto_estoque()
+
     n1=(estoque[0][len(estoque[0])-15])
     n2=(estoque[0][len(estoque[0])-14])
     n3=(estoque[0][len(estoque[0])-13])
-    num=int(n1+n2+n3)
+    num=int(n1+n2+n3)
+
     assert num > 100

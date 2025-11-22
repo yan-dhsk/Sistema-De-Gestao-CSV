@@ -13,7 +13,7 @@ def login():
                 print("==================================================================")
                 print("Login efetuado com sucesso!")
                 print("==================================================================")
-                Main.menu()
+                return Main.menu()
     print("Usuario ou senha nao cadastrados!")
 
 
@@ -28,19 +28,29 @@ def registrar():
         if lista[x][0]==usuario:
             print("==================================================================")
             print("Usuario ja cadastrado!")
-            break
-    lista.append(f"{usuario}{senha}{id}")
+            return 5
+    dados=[]
+    dados.append(usuario)
+    dados.append(senha)
+    dados.append(id)
+    lista.append(dados)
     with open("contas.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(lista)
         print("Usuario cadastrado com sucesso!")
         
-            
-opcao=5
-while opcao!=0:
+def menu():
     print("==================================================================")
     opcao=int(input("Oque deseja fazer?\n1-Login\n2-Registrar novo usuario\n0-Sair\nDigite o numero da opção desejada:\n"))
     if opcao==1:
-        login()
+        opcao=login()
     elif opcao==2:
         registrar()
+        menu()
+    if opcao==0:
+        return 0
+    else:
+        print("==================================================================")
+        print("Valor invalido")
+        menu()
+menu()

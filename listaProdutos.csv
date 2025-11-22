@@ -247,7 +247,7 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 246,Cabo; USB-C; 1.2m; nylon; rápido,180,20,5,Carregador Cabo USB-C 1.2m Nylon,1,10
 247,Turbo; 20W; PD; carregamento rápido,150,40,5,Carregador Turbo 20W PD,1,20
 248,20000mAh; USB-C; PD; alta capacidade,70,120,5,Carregador Power Bank Xiaomi 20000mAh,1,60
-249,Base; wireless; 3 em 1; phone, watch, buds,60,150,5,Carregador Base de Carregamento Sem Fio 3 em 1,1,75
+249,Base; wireless; 3 em 1; phone; watch; buds,60,150,5,Carregador Base de Carregamento Sem Fio 3 em 1,1,75
 250,Hub; 4 portas USB; carregamento múltiplo,100,60,5,Carregador Hub Carregador 4x USB,1,30
 251,10000mAh; USB-C; PD; slim design,80,90,5,Carregador Power Bank Samsung 10000mAh,1,45
 252,GaN; 100W; PD; PPS; 2 portas,50,180,5,Carregador GaN 100W Baseus,1,90
@@ -258,7 +258,7 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 257,Turbo; 30W; PD; carregamento rápido,140,50,5,Carregador Turbo 30W PD,1,25
 258,10000mAh; USB-C; PD; compacto,90,80,5,Carregador Power Bank Aukey 10000mAh,1,40
 259,Base; wireless; Belkin; 3 em 1; premium,40,200,5,Carregador Base Sem Fio Belkin,1,100
-260,Hub; USB-C; 7 em 1; HDMI, PD, USB,60,250,5,Carregador Hub USB-C 7 em 1,1,125
+260,Hub; USB-C; 7 em 1; HDMI; PD; USB,60,250,5,Carregador Hub USB-C 7 em 1,1,125
 261,10000mAh; wireless; power bank com Qi,70,130,5,Carregador Power Bank Wireless Anker,1,65
 262,GaN; 45W; PD; compacto; viagem,100,100,5,Carregador GaN 45W Ugreen,1,50
 263,Veicular; 20W; PD; rápido; compacto,120,40,5,Carregador Veicular Aukey 20W PD,1,20
@@ -278,7 +278,7 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 277,Turbo; 25W; PD; carregamento rápido,150,45,5,Carregador Turbo 25W PD,1,22
 278,10000mAh; USB-A; power bank básico,100,60,5,Carregador Power Bank Genérico 10000mAh,1,30
 279,Base; wireless; single; Qi; 10W,120,70,5,Carregador Base Sem Fio Single,1,35
-280,Hub; USB-C; 5 em 1; PD, HDMI, USB,60,180,5,Carregador Hub USB-C 5 em 1,1,90
+280,Hub; USB-C; 5 em 1; PD; HDMI; USB,60,180,5,Carregador Hub USB-C 5 em 1,1,90
 281,10000mAh; USB-C; PD; à prova d'água,70,110,5,Carregador Power Bank À Prova D'água,1,55
 282,GaN; 20W; PD; ultra compacto,100,60,5,Carregador GaN 20W Ugreen,1,30
 283,Veicular; 10W; USB-A; lento,130,20,5,Carregador Veicular 10W USB-A,1,10
@@ -298,4 +298,4 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 297,Turbo; 15W; PD; carregamento rápido,150,30,5,Carregador Turbo 15W PD,1,15
 298,10000mAh; USB-A; power bank econômico,100,50,5,Carregador Power Bank Econômico 10000mAh,1,25
 299,Base; wireless; 2 em 1; phone e buds,80,100,5,Carregador Base Sem Fio 2 em 1,1,50
-300,Hub; USB-C; 4 em 1; PD, HDMI, USB, Ethernet,60,200,5,Carregador Hub USB-C 4 em 1,1,100
+300,Hub; USB-C; 4 em 1; PD; HDMI; USB; Ethernet,60,200,5,Carregador Hub USB-C 4 em 1,1,100

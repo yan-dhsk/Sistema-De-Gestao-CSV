@@ -171,18 +171,27 @@ def despesas(usuario):
                 print("==================================================================")
                 print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
             print("==================================================================")
+        
         elif escolha == 2:
             print("==================================================================")
-            print("em trabalho")
+            data=input("Digite a data conforme o exemplo: (19-07-2021): ")
+            despesas=modulo_despesas.ver_despesas(data)
+            if despesas == 0:
+                print("==================================================================")
+                print("Data não encontrada")
+            else:
+                for i in range (0, len(despesas)):
+                    print("==================================================================")
+                    print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
             print("==================================================================")
+
         elif escolha == 3:
             print("==================================================================")
             nome=input("Digite o nome do usuario: ")
-            
             despesas=modulo_despesas.ver_despesas(nome)
             if despesas == 0:
                 print("==================================================================")
-                print("Usuario nao encontrado")
+                print("Usuario não encontrado")
             else:
                 for i in range (0, len(despesas)):
                     print("==================================================================")
@@ -191,8 +200,30 @@ def despesas(usuario):
 
         elif escolha == 4:
             print("==================================================================")
-            print("ainda nao ta pronto")
+            opcao=int(input("Oque deseja editar?\n1 - Tipo\n2 - Custo\n3 - Nome\n4 - Usuario\n"))
+            data=input("Digite a data conforme o exemplo: (19-07-2021):\n(Digite 0 para voltar para o menu caso precise)\n")
+            if data == "0":
+                pass
+            else:
+                despesas=modulo_despesas.editar_despesas1(data)
+                if despesas == 0:
+                    print("==================================================================")
+                    print("Data não encontrada")
+                    pass
+                else:
+                    for i in range (0, len(despesas)):
+                        print("==================================================================")
+                        print(f"ID: {i+1} | Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
+                    print("==================================================================")
+                    id=int(input("Digite o ID que quer alterar: "))
+                    novo_valor=input("Digite o novo valor: ")
+                    resultado=modulo_despesas.editar_despesas2(id, opcao, despesas, novo_valor)
+                    if resultado==0:
+                        print("Algum erro ocorreu")
+                    else:
+                        print("Editado com sucesso")
             print("==================================================================")
+
 
 def produto(usuario):
     while True:

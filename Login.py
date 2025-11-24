@@ -1,10 +1,7 @@
 import csv
 import Main
 
-def login():
-    print("==================================================================")
-    usuario=input("Digite o usuario:\n")
-    senha=input("Digite a senha:\n")
+def login(usuario, senha):
     with open("contas.csv", "r", encoding="utf-8") as arquivo:
         lista = list(csv.reader(arquivo, delimiter=','))
     for x in range (1, len(lista)):
@@ -15,14 +12,10 @@ def login():
                 print("==================================================================")
                 return Main.menu()
     print("Usuario ou senha nao cadastrados!")
-    menu()
+    return 5
 
 
-def registrar():
-    print("==================================================================")
-    usuario=input("Digite o usuario:\n")
-    senha=input("Digite a senha:\n")
-    id=input("Digite o id do usuario:\n")
+def registrar(usuario, senha, id):
     with open("contas.csv", "r", encoding="utf-8") as arquivo:
         lista = list(csv.reader(arquivo, delimiter=','))
     for x in range (1, len(lista)):
@@ -38,21 +31,6 @@ def registrar():
     with open("contas.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(lista)
+        print("==================================================================")
         print("Usuario cadastrado com sucesso!")
         
-def menu():
-    print("==================================================================")
-    opcao=int(input("Oque deseja fazer?\n1-Login\n2-Registrar novo usuario\n0-Sair\nDigite o numero da opção desejada:\n"))
-    if opcao==1:
-        opcao=login()
-    elif opcao==2:
-        registrar()
-        menu()
-    if opcao==0:
-        return 0
-    else:
-        print("==================================================================")
-        print("Valor invalido")
-        menu()
-menu()
-

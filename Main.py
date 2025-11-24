@@ -256,7 +256,7 @@ def produto():
 
 def menu():
     print("Olá, bem-vindo ao menu principal! Qual área você gostaria de acessar?")
-    print("1 - Produtos\n2 - Vendas\n3 - Despesas\n4 - Relátorio\n5 - Backup\n0 - Encerrar")
+    print("1 - Produtos\n2 - Vendas\n3 - Despesas\n4 - Relátorio\n5 - Logoff\n0 - Encerrar")
     escolha = int(input("Porfavor selecione sua opção: "))
     if escolha == 1:
         print("==================================================================")
@@ -272,11 +272,37 @@ def menu():
         relatorio()
     elif escolha == 5:
         print("==================================================================")
-        backup()
+        return 1
     elif escolha == 0:
         return 0
     else:
         print("Escolha inválida! Porfavor selecione uma opção válida!\n")
         menu()
 
-Login
+def registrar():
+    print("==================================================================")
+    usuario=input("Digite o usuario:\n")
+    senha=input("Digite a senha:\n")
+    id=input("Digite o id do usuario:\n")
+    Login.registrar(usuario, senha, id)
+
+def login():
+    print("==================================================================")
+    usuario=input("Digite o usuario:\n")
+    senha=input("Digite a senha:\n")
+    return Login.login(usuario, senha)
+
+def menu_login():
+    print("==================================================================")
+    opcao=int(input("Oque deseja fazer?\n1-Login\n2-Registrar novo usuario\n0-Sair\nDigite o numero da opção desejada:\n"))
+    if opcao==1:
+        opcao=login()
+    elif opcao==2:
+        registrar()
+    else:
+        print("==================================================================")
+        print("Valor invalido")
+    if opcao==0:
+        return 0
+    menu_login()
+menu_login()

@@ -20,7 +20,7 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 19,Bluetooth 5.1; 25h autonomia; ANC adaptativo,45,320,1,Fone Sony WH-CH710N,1,160
 20,Bluetooth 5.2; 30h autonomia; carregamento rápido,65,270,1,Fone JBL Tune 660NC,1,135
 21,Bluetooth 5.0; 18h autonomia; leve e confortável,75,140,1,Fone Anker Soundcore Liberty Neo,1,70
-22,Bluetooth 5.1; 20h autonomia; resistente à água,50,160,1,Fone Baseus WM01,1,80
+22,,50,160,1,Fone Baseus WM01,1,80
 23,Bluetooth 5.2; 24h autonomia; microfone claro,60,150,1,Fone QCY T17,1,75
 24,Bluetooth 5.0; 16h autonomia; compacto,85,100,1,Fone Haylou X1,1,50
 25,Bluetooth 5.1; 22h autonomia; estojo carregamento,40,210,1,Fone Redmi Buds 3 Lite,1,105
@@ -299,3 +299,4 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 298,10000mAh; USB-A; power bank econômico,100,50,5,Carregador Power Bank Econômico 10000mAh,1,25
 299,Base; wireless; 2 em 1; phone e buds,80,100,5,Carregador Base Sem Fio 2 em 1,1,50
 300,Hub; USB-C; 4 em 1; PD; HDMI; USB; Ethernet,60,200,5,Carregador Hub USB-C 4 em 1,1,100
+301,Agua geladinha,25,"1,50",1,Agua mineral,1

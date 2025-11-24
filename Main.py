@@ -2,8 +2,9 @@ import CRUD_produto
 import datetime
 import modulo_vendas
 import Login
+import modulo_despesas
 
-def vendas():
+def vendas(usuario):
     while True:
         print("Bem-Vindo a seção de Vendas!")
         escolha = input("1 - Registrar nova venda\n2 - Pesquisar venda\n3 - Remover venda\n4 - Atualizar venda\n5 - Consultar todas as vendas\n0 - Retornar ao menu principal\nPorfavor selecione sua opção: ")
@@ -151,28 +152,35 @@ def vendas():
             print("Opção Inválida!")
             pass
 
-def relatorio():
+def relatorio(usuario):
     print("Sentimos muito, esta área ainda esta em desenvolvimento!")
     print("==================================================================")
-    menu()
+    menu(usuario)
 
-def despesas():
-    print("Sentimos muito, esta área ainda esta em desenvolvimento!")
-    print("==================================================================")
-    menu()
+def despesas(usuario):
+    while True:
+        print("Bem-Vindo a seção de despesas!")
+        escolha = int(input("1 - Consultar todos as despesas\n2 - Consultar despesas de dia especifico\n3 - Editar despesas\n0 - Voltar ao menu\n"))
+        if escolha == 0:
+                print("==================================================================")
+                menu(usuario)
+                break
+        elif escolha == 1:
+            modulo_despesas.ver_despesas(0)
+        elif escolha == 2:
+            print("==================================================================")
+            print("em trabalho")
+        elif escolha == 3:
+            print("==================================================================")
+            print("ainda nao ta pronto")
 
-def backup():
-    print("Sentimos muito, esta área ainda esta em desenvolvimento!")
-    print("==================================================================")
-    menu()
-
-def produto():
+def produto(usuario):
     while True:
         print("Bem-Vindo a seção de produtos!")
         escolha = int(input("1 - Consultar produtos\n2 - Adicionar novo produto\n3 - Remover produto\n4 - Atualizar produto\n5 - Mostrar itens com estoque baixo\n6 - Mostrar itens com estoque alto\n7 - Listar todos os produtos\n0 - Retornar ao menu principal\nPorfavor selecione sua opção: "))
         if escolha == 0:
             print("==================================================================")
-            menu()
+            menu(usuario)
             break
         elif escolha == 1:
             busca = input("Digite o nome do produto pelo qual deseja buscar: ")
@@ -186,7 +194,7 @@ def produto():
             print("==================================================================")
         elif escolha == 2:
             print("==================================================================")
-            ordem = ["Descrição", "Quantidade", "Preço", "ID de categoria", "Nome", "ID de usuario"]
+            ordem = ["Descrição", "Quantidade", "Preço", "ID de categoria", "Nome", "ID de usuario","Preço de custo"]
             quantidade = int(input("Quantos produtos você deseja adicionar? "))
             for i in range(quantidade):
                 novo_produto_info = []
@@ -194,7 +202,7 @@ def produto():
                 for campo in ordem:
                     valor = input(f"Informe {campo} do produto: ")
                     novo_produto_info.append(valor)
-                novo_id = CRUD_produto.adicionar_produto(novo_produto_info)
+                novo_id = CRUD_produto.adicionar_produto(novo_produto_info, usuario)
                 print(f"Produto de id: '{novo_id}' adicionado com sucesso!")
             print("==================================================================")
         elif escolha == 3:
@@ -254,22 +262,22 @@ def produto():
         else:
             print("Escolha inválida!")
 
-def menu():
+def menu(usuario):
     print("Olá, bem-vindo ao menu principal! Qual área você gostaria de acessar?")
     print("1 - Produtos\n2 - Vendas\n3 - Despesas\n4 - Relátorio\n5 - Logoff\n0 - Encerrar")
     escolha = int(input("Porfavor selecione sua opção: "))
     if escolha == 1:
         print("==================================================================")
-        produto()
+        produto(usuario)
     elif escolha == 2:
         print("==================================================================")
-        vendas()
+        vendas(usuario)
     elif escolha == 3:
         print("==================================================================")
-        despesas()
+        despesas(usuario)
     elif escolha == 4:
         print("==================================================================")
-        relatorio()
+        relatorio(usuario)
     elif escolha == 5:
         print("==================================================================")
         return 1
@@ -277,7 +285,7 @@ def menu():
         return 0
     else:
         print("Escolha inválida! Porfavor selecione uma opção válida!\n")
-        menu()
+        menu(usuario)
 
 def registrar():
     print("==================================================================")

@@ -1,4 +1,5 @@
 import csv
+import modulo_despesas
 
 def listar_todos():
     with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
@@ -21,7 +22,7 @@ def buscar_produto(busca):
         return []
     return resultados
 
-def adicionar_produto(informacoes_produto):
+def adicionar_produto(informacoes_produto,usuario):
     with open("listaProdutos.csv", "r", encoding="utf-8") as arquivo:
         produtos = list(csv.reader(arquivo, delimiter=','))
     novo_produto = []
@@ -37,6 +38,7 @@ def adicionar_produto(informacoes_produto):
     with open("listaProdutos.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(produtos)
+    modulo_despesas.registar_despesas(usuario, produtos[novo_id][5], produtos[novo_id][7])
     return novo_id
 
 def deletar_produto(deletar):

@@ -10,9 +10,9 @@ def login(usuario, senha):
                 print("==================================================================")
                 print("Login efetuado com sucesso!")
                 print("==================================================================")
-                return Main.menu()
+                return Main.menu(usuario)
     print("Usuario ou senha nao cadastrados!")
-    return 5
+    return 1
 
 
 def registrar(usuario, senha, id):
@@ -22,7 +22,7 @@ def registrar(usuario, senha, id):
         if lista[x][0]==usuario:
             print("==================================================================")
             print("Usuario ja cadastrado!")
-            return 5
+            return 1
     dados=[]
     dados.append(usuario)
     dados.append(senha)

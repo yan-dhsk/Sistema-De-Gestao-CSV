@@ -160,19 +160,52 @@ def relatorio(usuario):
 def despesas(usuario):
     while True:
         print("Bem-Vindo a seção de despesas!")
-        escolha = int(input("1 - Consultar todos as despesas\n2 - Consultar despesas de dia especifico\n3 - Consultar pro usuario\n4 - Editar despesas\n0 - Voltar ao menu\n"))
+        escolha = int(input("1 - Adicionar novas despesas\n2 - Excluir despesas\n3 - Consultar todos as despesas\n4 - Consultar despesas de dia especifico\n5 - Consultar pro usuario\n6 - Editar despesas\n0 - Voltar ao menu\n"))
         if escolha == 0:
                 print("==================================================================")
                 menu(usuario)
                 break
+        
         elif escolha == 1:
+            divida_tipo=input("Digite as informações da despesa\nQual o tipo de despesa? (Anual, Mensal, Semanal, Unica ....)\n")
+            divida_custo=input("Qual o custo?\n")
+            divida_nome=input("Qual o nome?")
+            resul=modulo_despesas.registar_despesas(usuario, divida_custo, divida_nome, divida_tipo)
+            print("==================================================================")
+            if resul == 1:
+                print("Despesa adicionada com sucesso")
+            else:
+                print("Ocorreu um erro, despesa nao adicionada")
+            print("==================================================================")
+
+        elif escolha == 2:
+            data=input("Digite a data conforme o exemplo: (19-07-2021):\n")
+            despesas=modulo_despesas.editar_despesas1(data)
+            if despesas == 0:
+                print("==================================================================")
+                print("Data não encontrada")
+                pass
+            else:
+                for i in range (0, len(despesas)):
+                    print("==================================================================")
+                    print(f"ID: {i+1} | Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
+                print("==================================================================")
+                id=int(input("Digite o ID que quer deletar: "))
+                resultado=modulo_despesas.excluir_despesa(id, despesas)
+                if resultado==0:
+                    print("Algum erro ocorreu")
+                else:
+                    print("Deletado com sucesso")
+            print("==================================================================")
+
+        elif escolha == 3:
             despesas=modulo_despesas.ver_despesas(0)
             for i in range (1,len(despesas)):
                 print("==================================================================")
                 print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
             print("==================================================================")
         
-        elif escolha == 2:
+        elif escolha == 4:
             print("==================================================================")
             data=input("Digite a data conforme o exemplo: (19-07-2021): ")
             despesas=modulo_despesas.ver_despesas(data)
@@ -185,7 +218,7 @@ def despesas(usuario):
                     print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
             print("==================================================================")
 
-        elif escolha == 3:
+        elif escolha == 5:
             print("==================================================================")
             nome=input("Digite o nome do usuario: ")
             despesas=modulo_despesas.ver_despesas(nome)
@@ -198,30 +231,27 @@ def despesas(usuario):
                     print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
             print("==================================================================")
 
-        elif escolha == 4:
+        elif escolha == 6:
             print("==================================================================")
             opcao=int(input("Oque deseja editar?\n1 - Tipo\n2 - Custo\n3 - Nome\n4 - Usuario\n"))
-            data=input("Digite a data conforme o exemplo: (19-07-2021):\n(Digite 0 para voltar para o menu caso precise)\n")
-            if data == "0":
+            data=input("Digite a data conforme o exemplo: (19-07-2021):\n")
+            despesas=modulo_despesas.editar_despesas1(data)
+            if despesas == 0:
+                print("==================================================================")
+                print("Data não encontrada")
                 pass
             else:
-                despesas=modulo_despesas.editar_despesas1(data)
-                if despesas == 0:
+                for i in range (0, len(despesas)):
                     print("==================================================================")
-                    print("Data não encontrada")
-                    pass
+                    print(f"ID: {i+1} | Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
+                print("==================================================================")
+                id=int(input("Digite o ID que quer alterar: "))
+                novo_valor=input("Digite o novo valor: ")
+                resultado=modulo_despesas.editar_despesas2(id, opcao, despesas, novo_valor)
+                if resultado==0:
+                    print("Algum erro ocorreu")
                 else:
-                    for i in range (0, len(despesas)):
-                        print("==================================================================")
-                        print(f"ID: {i+1} | Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
-                    print("==================================================================")
-                    id=int(input("Digite o ID que quer alterar: "))
-                    novo_valor=input("Digite o novo valor: ")
-                    resultado=modulo_despesas.editar_despesas2(id, opcao, despesas, novo_valor)
-                    if resultado==0:
-                        print("Algum erro ocorreu")
-                    else:
-                        print("Editado com sucesso")
+                    print("Editado com sucesso")
             print("==================================================================")
 
 

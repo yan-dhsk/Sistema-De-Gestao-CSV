@@ -2,6 +2,22 @@ import csv
 import datetime
 
 
+def excluir_despesa(id, despesas):
+    with open("despesas.csv", "r", encoding="utf-8") as arquivo:
+        lista=list(csv.reader(arquivo, delimiter=','))
+    item=despesas[id-1]
+    for i in range (1, len(lista)):    
+        if item == lista[i]:
+            lista.pop(i)
+            with open("despesas.csv", "w", encoding="utf-8", newline="") as arquivo:
+                escritor = csv.writer(arquivo)
+                escritor.writerows(lista)
+                return 1
+    return 0
+
+
+
+
 def registar_despesas(usuario, tipo, custo, nome):
     with open("despesas.csv", "r", encoding="utf-8") as arquivo:
         despesas=list(csv.reader(arquivo, delimiter=','))
@@ -16,6 +32,8 @@ def registar_despesas(usuario, tipo, custo, nome):
     with open("despesas.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(despesas)
+        return 1
+    return 0
 
 
 def ver_despesas(data):

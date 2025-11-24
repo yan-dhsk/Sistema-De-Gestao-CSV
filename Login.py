@@ -33,4 +33,5 @@ def registrar(usuario, senha, id):
         escritor.writerows(lista)
         print("==================================================================")
         print("Usuario cadastrado com sucesso!")
-        
+
+Main.menu_login()

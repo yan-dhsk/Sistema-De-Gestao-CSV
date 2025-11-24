@@ -1,2 +1,4 @@
-data,produto,custo,usuario
-2025-11-24 09:03:11,Agua mineral,1.50,vinicius
+data,tipo,custo,nome,usuario
+2025-11-24 10:56:14,produto,"1,50",Agua mineral,vinicius
+2025-11-24 10:57:10,teste,"2",Teste,Alguem
+2025-11-24 10:58:14,produto,"99999",seila,vinicius

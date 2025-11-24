@@ -38,7 +38,7 @@ def adicionar_produto(informacoes_produto,usuario):
     with open("listaProdutos.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(produtos)
-    modulo_despesas.registar_despesas(usuario, produtos[novo_id][5], produtos[novo_id][7])
+    modulo_despesas.registar_despesas(usuario, "produto", produtos[novo_id][7], produtos[novo_id][5])
     return novo_id
 
 def deletar_produto(deletar):

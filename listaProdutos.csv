@@ -300,3 +300,4 @@ ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDe
 299,Base; wireless; 2 em 1; phone e buds,80,100,5,Carregador Base Sem Fio 2 em 1,1,50
 300,Hub; USB-C; 4 em 1; PD; HDMI; USB; Ethernet,60,200,5,Carregador Hub USB-C 4 em 1,1,100
 301,Agua geladinha;  melhor agua da cidade,75,2,1,Agua mineral,1,1.50
+302,Agua geladinha,76,2,1,Agua mineral,1,"1,50"

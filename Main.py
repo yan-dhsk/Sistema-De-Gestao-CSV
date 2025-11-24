@@ -160,19 +160,39 @@ def relatorio(usuario):
 def despesas(usuario):
     while True:
         print("Bem-Vindo a seção de despesas!")
-        escolha = int(input("1 - Consultar todos as despesas\n2 - Consultar despesas de dia especifico\n3 - Editar despesas\n0 - Voltar ao menu\n"))
+        escolha = int(input("1 - Consultar todos as despesas\n2 - Consultar despesas de dia especifico\n3 - Consultar pro usuario\n4 - Editar despesas\n0 - Voltar ao menu\n"))
         if escolha == 0:
                 print("==================================================================")
                 menu(usuario)
                 break
         elif escolha == 1:
-            modulo_despesas.ver_despesas(0)
+            despesas=modulo_despesas.ver_despesas(0)
+            for i in range (1,len(despesas)):
+                print("==================================================================")
+                print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
+            print("==================================================================")
         elif escolha == 2:
             print("==================================================================")
             print("em trabalho")
+            print("==================================================================")
         elif escolha == 3:
             print("==================================================================")
+            nome=input("Digite o nome do usuario: ")
+            
+            despesas=modulo_despesas.ver_despesas(nome)
+            if despesas == 0:
+                print("==================================================================")
+                print("Usuario nao encontrado")
+            else:
+                for i in range (0, len(despesas)):
+                    print("==================================================================")
+                    print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
+            print("==================================================================")
+
+        elif escolha == 4:
+            print("==================================================================")
             print("ainda nao ta pronto")
+            print("==================================================================")
 
 def produto(usuario):
     while True:
@@ -313,4 +333,5 @@ def menu_login():
     if opcao==0:
         return 0
     menu_login()
-menu_login()
+
+Login

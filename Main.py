@@ -169,8 +169,8 @@ def despesas(usuario):
         elif escolha == 1:
             divida_tipo=input("Digite as informações da despesa\nQual o tipo de despesa? (Anual, Mensal, Semanal, Unica ....)\n")
             divida_custo=input("Qual o custo?\n")
-            divida_nome=input("Qual o nome?")
-            resul=modulo_despesas.registar_despesas(usuario, divida_custo, divida_nome, divida_tipo)
+            divida_nome=input("Qual o nome?\n")
+            resul=modulo_despesas.registar_despesas(usuario, divida_tipo, divida_custo, divida_nome )
             print("==================================================================")
             if resul == 1:
                 print("Despesa adicionada com sucesso")
@@ -201,9 +201,9 @@ def despesas(usuario):
         elif escolha == 3:
             despesas=modulo_despesas.ver_despesas(0)
             for i in range (1,len(despesas)):
-                print("==================================================================")
+                print("=============================================================================================================")
                 print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
-            print("==================================================================")
+            print("=============================================================================================================")
         
         elif escolha == 4:
             print("==================================================================")
@@ -214,9 +214,9 @@ def despesas(usuario):
                 print("Data não encontrada")
             else:
                 for i in range (0, len(despesas)):
-                    print("==================================================================")
+                    print("=============================================================================================================")
                     print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
-            print("==================================================================")
+            print("=============================================================================================================")
 
         elif escolha == 5:
             print("==================================================================")
@@ -227,9 +227,9 @@ def despesas(usuario):
                 print("Usuario não encontrado")
             else:
                 for i in range (0, len(despesas)):
-                    print("==================================================================")
+                    print("=============================================================================================================")
                     print(f"Data: {despesas[i][0]} | Tipo: {despesas[i][1]} | Custo: R${despesas[i][2]} | Nome: {despesas[i][3]} | Usuario: {despesas[i][4]}")
-            print("==================================================================")
+            print("=============================================================================================================")
 
         elif escolha == 6:
             print("==================================================================")
@@ -373,16 +373,29 @@ def registrar():
     usuario=input("Digite o usuario:\n")
     senha=input("Digite a senha:\n")
     id=input("Digite o id do usuario:\n")
-    Login.registrar(usuario, senha, id)
+    resul=Login.registrar(usuario, senha, id)
+    if resul == 1:
+        print("==================================================================")
+        print("Usuario ja cadastrado!")
+    elif resul == 0:
+        print("==================================================================")
+        print("Usuario cadastrado com sucesso!")
 
 def login():
     print("==================================================================")
     usuario=input("Digite o usuario:\n")
     senha=input("Digite a senha:\n")
-    return Login.login(usuario, senha)
+    resul=Login.login(usuario, senha)
+    if resul == 0:
+        print("==================================================================")
+        print("Login efetuado com sucesso!")
+        print("==================================================================")
+        return menu(usuario)
+    elif resul == 1:
+        print("Usuario ou senha incorretos!")
 
 def menu_login():
-    print("==================================================================")
+    print("================================Bem-Vindo================================")
     opcao=int(input("Oque deseja fazer?\n1-Login\n2-Registrar novo usuario\n0-Sair\nDigite o numero da opção desejada:\n"))
     if opcao==1:
         opcao=login()

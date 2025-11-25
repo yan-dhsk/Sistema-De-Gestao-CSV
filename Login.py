@@ -7,11 +7,7 @@ def login(usuario, senha):
     for x in range (1, len(lista)):
         if lista[x][0]==usuario:
             if lista[x][1]==senha:
-                print("==================================================================")
-                print("Login efetuado com sucesso!")
-                print("==================================================================")
-                return Main.menu(usuario)
-    print("Usuario ou senha nao cadastrados!")
+                return 0
     return 1
 
 
@@ -20,8 +16,6 @@ def registrar(usuario, senha, id):
         lista = list(csv.reader(arquivo, delimiter=','))
     for x in range (1, len(lista)):
         if lista[x][0]==usuario:
-            print("==================================================================")
-            print("Usuario ja cadastrado!")
             return 1
     dados=[]
     dados.append(usuario)
@@ -31,7 +25,6 @@ def registrar(usuario, senha, id):
     with open("contas.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(lista)
-        print("==================================================================")
-        print("Usuario cadastrado com sucesso!")
+        return 0
 
 Main.menu_login()

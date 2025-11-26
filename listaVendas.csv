@@ -1,0 +1,12 @@
+VendaID,ProdutoID,NomeProdutoVendido,QuantidadeVendida,PrecoUnitarioVendido,ValorTotalVendido,UsuarioID,ClienteID,MetodoPagamento,DataVenda
+1,1,Fone Sony WH-1000XM4,2,300,600,1,3,Cartão,2025-11-20 15:07:34
+2,3,Fone Anker Soundcore Life Q20,1,200,200,1,5,Pix,2025-11-20 15:07:34
+3,5,Fone QCY T13,4,180,720,1,2,Cartão,2025-11-20 15:07:34
+4,8,Fone SoundPEATS TrueFree2,3,100,300,1,4,Pix,2025-11-20 15:07:34
+5,11,Fone Bose QuietComfort 35 II,1,400,400,1,6,Cartão,2025-11-20 15:07:34
+6,16,Fone Apple AirPods Pro,2,350,700,1,7,Pix,2025-11-20 15:07:34
+7,20,Fone JBL Tune 660NC,1,270,270,1,8,Cartão,2025-11-20 15:07:34
+8,1,Fone Sony WH-1000XM4,1,300,300,1,9,Pix,2025-11-20 15:07:34
+9,5,Fone QCY T13,2,180,360,1,10,Cartão,2025-11-20 15:07:34
+10,3,Fone Anker Soundcore Life Q20,5,200,1000,1,11,Pix,2025-11-20 15:07:34
+11,296,cabo,2,18,36,1,0,Pix,2025-11-20 17:00:08

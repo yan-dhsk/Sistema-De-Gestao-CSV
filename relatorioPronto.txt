@@ -1,0 +1,38 @@
+=== RELATORIO DE VENDAS ===
+Periodo: 2024-01-01 ate 2024-05-01
+Faturamento Total: R$7893.00
+Lucro Bruto: R$-2867.00
+Total Despesas: R$10760.00
+Vendas Totais: 39
+
+--- TOP 10 MAIS VENDIDOS ---
+Capas Spigen Plus66 - Quantidade: 4
+Acessórios Tronsmart S8 - Quantidade: 3
+Fones JBL Gen41 - Quantidade: 3
+Capas Pitaka Gen19 - Quantidade: 3
+Fones Sony Gen71 - Quantidade: 2
+Cabos Belkin Gen58 - Quantidade: 2
+Capas UAG Plus1 - Quantidade: 2
+Fones Anker Gen90 - Quantidade: 2
+Cabos UGREEN Pro22 - Quantidade: 2
+Carregadores Honor Plus14 - Quantidade: 2
+
+ ---TOP 10 MENOS VENDIDOS ---
+Carregadores Baseus Max77 - Quantidade: 1
+Cabos Apple S2 - Quantidade: 1
+Capas ESR Max12 - Quantidade: 1
+Acessórios UGREEN Pro43 - Quantidade: 1
+Capas Spigen Max33 - Quantidade: 1
+Cabos Remax Gen49 - Quantidade: 1
+Capas ProCase S18 - Quantidade: 1
+Capas Spigen Gen62 - Quantidade: 1
+Peliculas ESR Plus44 - Quantidade: 1
+Carregadores Baseus Gen40 - Quantidade: 1
+
+--- Vendas por categoria ---
+Cabos: 6
+Capas: 14
+Fones: 7
+Peliculas: 2
+Carregadores: 4
+Acessórios: 6

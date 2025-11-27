@@ -20,15 +20,16 @@ def excluir_despesa(id, despesas):
 
 def registar_despesas(usuario, tipo, custo, nome):
     with open("despesas.csv", "r", encoding="utf-8") as arquivo:
-        despesas=list(csv.reader(arquivo, delimiter=','))
-    hora_atual=datetime.datetime.now()
-    despeas_atual=[]
-    despeas_atual.append(hora_atual.strftime("%d-%m-%Y %H:%M:%S"))
-    despeas_atual.append(tipo)
-    despeas_atual.append(custo)
-    despeas_atual.append(nome)
-    despeas_atual.append(usuario)
-    despesas.append(despeas_atual)
+        despesas = list(csv.reader(arquivo, delimiter=','))
+
+    hora_atual = datetime.datetime.now()
+    despesa_atual = []
+    despesa_atual.append(hora_atual.strftime("%Y-%m-%d"))
+    despesa_atual.append(tipo)
+    despesa_atual.append(custo)
+    despesa_atual.append(nome)
+    despesa_atual.append(usuario)
+    despesas.append(despesa_atual)
     with open("despesas.csv", "w", encoding="utf-8", newline="") as arquivo:
         escritor = csv.writer(arquivo)
         escritor.writerows(despesas)
@@ -92,6 +93,8 @@ def editar_despesas2(id, opcao, despesas, novo_valor):
     item=despesas[id-1]
     for i in range (1, len(lista)):    
         if item == lista[i]:
+            if opcao == 0 and isinstance(novo_valor, datetime.datetime):
+                novo_valor = novo_valor.strftime("%Y-%m-%d")
             lista[i][opcao]=novo_valor
             with open("despesas.csv", "w", encoding="utf-8", newline="") as arquivo:
                 escritor = csv.writer(arquivo)

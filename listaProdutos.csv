@@ -1,304 +1,51 @@
-ProdutoID,Descricao,Quantidade,PreçoDeVenda,CategoriaID,Nome,UsuarioID,PreçoDeCusto
-1,Bluetooth 5.0; ANC; 30h autonomia,50,300,1,Fone Sony WH-1000XM4,1,150
-2,Bluetooth 5.1; 20h autonomia; design dobrável,40,250,1,Fone JBL Tune 510BT,1,120
-3,Bluetooth 5.2; ANC; 40h autonomia; estojo carregamento,60,200,1,Fone Anker Soundcore Life Q20,1,100
-4,Bluetooth 5.0; 15h autonomia; à prova de suor,80,150,1,Fone Baseus Bowie MA10,1,75
-5,Bluetooth 5.2; 28h autonomia; estojo carregamento,70,180,1,Fone QCY T13,1,90
-6,Bluetooth 5.1; 24h autonomia; design compacto,55,120,1,Fone Haylou GT6,1,60
-7,Bluetooth 5.2; ANC; 25h autonomia; estojo carregamento,45,220,1,Fone Redmi AirDots 3 Pro,1,110
-8,Bluetooth 5.0; 20h autonomia; à prova de respingos,65,100,1,Fone SoundPEATS TrueFree2,1,50
-9,Bluetooth 5.1; 18h autonomia; microfone embutido,35,280,1,Fone JBL Live 220BT,1,140
-10,Bluetooth 5.0; 20h autonomia; estojo carregamento,25,150,1,Fone Sony WF-C500,1,75
-11,Bluetooth 5.2; ANC; 35h autonomia; cancelamento de ruído,30,400,1,Fone Bose QuietComfort 35 II,1,200
-12,Bluetooth 5.0; 12h autonomia; esportivo,90,130,1,Fone Philips TAH1205,1,65
-13,Bluetooth 5.1; 22h autonomia; design ergonômico,60,170,1,Fone Sennheiser HD 450BT,1,85
-14,Bluetooth 5.2; 18h autonomia; à prova de suor,70,190,1,Fone Jabra Elite 75t,1,95
-15,Bluetooth 5.0; 10h autonomia; bass vibrante,40,110,1,Fone Skullcandy Crusher Evo,1,55
-16,Bluetooth 5.1; 40h autonomia; estojo carregamento,50,350,1,Fone Apple AirPods Pro,1,175
-17,Bluetooth 5.2; 15h autonomia; conectividade rápida,80,120,1,Fone OnePlus Buds Pro,1,60
-18,Bluetooth 5.0; 20h autonomia; som surround,55,180,1,Fone Samsung Galaxy Buds Pro,1,90
-19,Bluetooth 5.1; 25h autonomia; ANC adaptativo,45,320,1,Fone Sony WH-CH710N,1,160
-20,Bluetooth 5.2; 30h autonomia; carregamento rápido,65,270,1,Fone JBL Tune 660NC,1,135
-21,Bluetooth 5.0; 18h autonomia; leve e confortável,75,140,1,Fone Anker Soundcore Liberty Neo,1,70
-22,,50,160,1,Fone Baseus WM01,1,80
-23,Bluetooth 5.2; 24h autonomia; microfone claro,60,150,1,Fone QCY T17,1,75
-24,Bluetooth 5.0; 16h autonomia; compacto,85,100,1,Fone Haylou X1,1,50
-25,Bluetooth 5.1; 22h autonomia; estojo carregamento,40,210,1,Fone Redmi Buds 3 Lite,1,105
-26,Bluetooth 5.2; 20h autonomia; som equilibrado,70,130,1,Fone SoundPEATS TrueEngine 3,1,65
-27,Bluetooth 5.0; 15h autonomia; baixo custo,100,80,1,Fone Philips TAH4105,1,40
-28,Bluetooth 5.1; 25h autonomia; design aberto,30,240,1,Fone Samsung Galaxy Buds Live,1,120
-29,Bluetooth 5.2; 30h autonomia; alta fidelidade,55,380,1,Fone Apple AirPods Max,1,190
-30,Bluetooth 5.0; 12h autonomia; esportivo,65,120,1,Fone Bose SoundSport Free,1,60
-31,Bluetooth 5.1; 18h autonomia; ANC personalizado,45,340,1,Fone Bose QuietComfort Earbuds,1,170
-32,Bluetooth 5.2; 28h autonomia; som claro,50,260,1,Fone Sennheiser CX Plus,1,130
-33,Bluetooth 5.0; 20h autonomia; premium,35,420,1,Fone Sennheiser Momentum True Wireless 2,1,210
-34,Bluetooth 5.1; 24h autonomia; resistente a respingos,60,180,1,Fone Jabra Elite 85t,1,90
-35,Bluetooth 5.2; 10h autonomia; design ousado,40,100,1,Fone Skullcandy Indy Evo,1,50
-36,Bluetooth 5.0; 8h autonomia; compacto,90,70,1,Fone Skullcandy Sesh Evo,1,35
-37,Bluetooth 5.1; 22h autonomia; estilo moderno,55,300,1,Fone Beats Solo Pro,1,150
-38,Bluetooth 5.2; 15h autonomia; esportivo,70,250,1,Fone Beats Powerbeats Pro,1,125
-39,Bluetooth 5.0; 12h autonomia; flexível,80,90,1,Fone Beats Flex,1,45
-40,Bluetooth 5.1; 20h autonomia; som dinâmico,50,160,1,Fone OnePlus Buds Z,1,80
-41,Bluetooth 5.2; 25h autonomia; cancelamento de ruído,45,280,1,Fone Sony WF-1000XM4,1,140
-42,Bluetooth 5.0; 18h autonomia; leve,65,130,1,Fone Sony WI-C200,1,65
-43,Bluetooth 5.1; 20h autonomia; estojo carregamento,60,140,1,Fone JBL Endurance Run,1,70
-44,Bluetooth 5.2; 30h autonomia; ANC híbrido,40,360,1,Fone Anker Soundcore Liberty Air 2,1,180
-45,Bluetooth 5.0; 15h autonomia; econômico,85,110,1,Fone Baseus Encok W04,1,55
-46,Bluetooth 5.1; 24h autonomia; carregamento USB-C,70,150,1,Fone QCY T8,1,75
-47,Bluetooth 5.2; 20h autonomia; som imersivo,55,170,1,Fone Haylou Mori,1,85
-48,Bluetooth 5.0; 10h autonomia; entry-level,95,60,1,Fone Redmi AirDots 2,1,30
-49,Bluetooth 5.1; 12h autonomia; melhorado,80,70,1,Fone Redmi AirDots S,1,35
-50,Bluetooth 5.2; 22h autonomia; som cristalino,50,190,1,Fone SoundPEATS TrueFree+,1,95
-51,Bluetooth 5.0; 25h autonomia; confortável,60,200,1,Fone Philips TAH4205,1,100
-52,Bluetooth 5.1; 18h autonomia; compatível com assistentes,45,230,1,Fone Samsung Galaxy Buds+,1,115
-53,Bluetooth 5.2; 20h autonomia; design compacto,70,160,1,Fone Samsung Galaxy Buds FE,1,80
-54,Bluetooth 5.0; 5h autonomia; fone com fio,100,50,1,Fone Sony WI-C100,1,25
-55,Bluetooth 5.1; 35h autonomia; estojo carregamento,40,290,1,Fone Anker Soundcore Life P2,1,145
-56,Bluetooth 5.2; 28h autonomia; som potente,55,270,1,Fone Baseus Bowie E9,1,135
-57,Bluetooth 5.0; 16h autonomia; econômico,75,120,1,Fone QCY T12,1,60
-58,Bluetooth 5.1; 24h autonomia; autonomia longa,65,140,1,Fone Haylou GT1 Pro,1,70
-59,Bluetooth 5.2; 20h autonomia; cancelamento de ruído,50,260,1,Fone Jabra Elite 3,1,130
-60,Bluetooth 5.0; 15h autonomia; design minimalista,80,100,1,Fone Apple AirPods 2,1,50
-61,Silicone macio; bordas elevadas; proteção da câmera,100,20,2,Capinha Silicone iPhone 11,1,10
-62,TPU transparente; resistente a amarelecimento,150,15,2,Capinha TPU Samsung Galaxy S21,1,7
-63,Couro sintético; toque premium; proteção durável,80,40,2,Capinha Couro iPhone 12,1,20
-64,Estrutura rígida; suporte para cartões,60,30,2,Capinha Cartão iPhone SE,1,15
-65,Ímã integrado; compatível com MagSafe,120,35,2,Capinha Magnética iPhone 13,1,17
-66,Transparente; bordas curvadas; cobertura total,200,12,2,Capinha Transparente iPhone 14,1,6
-67,Reforçada com bordas de ar; proteção contra quedas,90,25,2,Capinha AntiImpacto Samsung A52,1,12
-68,Silicone TPU; bordas elevadas; compatível MagSafe,110,28,2,Capinha SlimMag iPhone 13,1,14
-69,Estrutura rígida; interior em TPU; proteção híbrida,70,32,2,Capinha HardShell iPhone 14 Pro,1,16
-70,TPU claro; resistente a riscos; visibilidade total,180,18,2,Capinha ClearView Galaxy S10,1,9
-71,Couro genuíno; acabamento premium; proteção elegante,50,45,2,Capinha LeatherFit iPhone 11,1,22
-72,Silicone antiderrapante; bordas elevadas; aderência melhorada,130,22,2,Capinha SoftGrip Redmi Note 10,1,11
-73,Design estampado UV; proteção básica; estilo personalizado,140,20,2,Capinha PrintCase Galaxy A12,1,10
-74,TPU reforçado; absorção de impacto; acabamento fosco,160,26,2,Capinha Armor Samsung S21,1,13
-75,Bordas elevadas; proteção contra impactos; material durável,120,24,2,Capinha DropGuard Galaxy A52,1,12
-76,Compatível MagSafe; ímã forte; design fino,100,38,2,Capinha MagCase iPhone 12,1,19
-77,Suporte para 1-2 cartões; estrutura rígida; praticidade,80,34,2,Capinha Wallet iPhone SE,1,17
-78,Estrutura rígida exterior; interior macio; proteção dupla,90,36,2,Capinha Híbrida iPhone 14 Pro,1,18
-79,Silicone suave; bordas elevadas; proteção eficaz,110,26,2,Capinha Silicone Redmi Note 10,1,13
-80,TPU transparente; não amarela; visibilidade total,200,16,2,Capinha Transparente Galaxy S10,1,8
-81,Couro sintético; resistente a arranhões; toque suave,70,42,2,Capinha Couro iPhone 12 Pro,1,21
-82,Design ultrafino; proteção básica; leveza,180,14,2,Capinha Slim iPhone 13,1,7
-83,Proteção militar; resistente a quedas; material robusto,60,44,2,Capinha Defender Samsung S21,1,22
-84,Transparente colorida; estilo jovial; proteção,130,28,2,Capinha Colorida iPhone 14,1,14
-85,Com suporte para cartões; material durável; conveniência,100,32,2,Capinha Cartão Samsung A52,1,16
-86,Ímã integrado; carregamento sem fio; compatível,120,40,2,Capinha Magnética iPhone 14,1,20
-87,Silicone com textura; aderência melhorada; cores variadas,150,24,2,Capinha Texturizada Redmi Note 11,1,12
-88,TPU flexível; fácil instalação; proteção geral,140,18,2,Capinha Flex iPhone 13,1,9
-89,Couro eco-friendly; acabamento premium; sustentável,50,48,2,Capinha Couro Ecológico iPhone 12,1,24
-90,Proteção híbrida; resistente a impactos; design moderno,80,34,2,Capinha Híbrida Samsung S21,1,17
-91,Transparente com bordas coloridas; estilo único,160,22,2,Capinha Borda Colorida iPhone 13,1,11
-92,Silicone resistente; proteção contra poeira; fácil limpeza,110,26,2,Capinha Silicone Samsung A53,1,13
-93,Com alça; praticidade para carregar; material durável,70,30,2,Capinha Com Alça iPhone 12,1,15
-94,Design minimalista; proteção sem bulk; elegância,180,20,2,Capinha Minimalista iPhone 14,1,10
-95,Proteção reforçada; cantos amortecidos; resistência,90,36,2,Capinha Reforçada Samsung S20,1,18
-96,Com suporte para pulseira; ideal para esportes,120,28,2,Capinha Esportiva iPhone SE,1,14
-97,Material biodegradável; eco-friendly; proteção,100,32,2,Capinha Biodegradável Galaxy A52,1,16
-98,Transparente com glitter; estilo glamour; proteção,130,24,2,Capinha Glitter iPhone 13,1,12
-99,Couro com textura; grip melhorado; durabilidade,60,42,2,Capinha Couro Texturizado iPhone 11,1,21
-100,Proteção 360 graus; bordas elevadas; cobertura total,140,26,2,Capinha 360 iPhone 14,1,13
-101,Design personalizável; proteção básica; estilo,150,18,2,Capinha Personalizável Samsung A12,1,9
-102,Silicone com padrão; antiderrapante; unique,110,30,2,Capinha Padrão Redmi Note 10,1,15
-103,TPU resistente a óleos; fácil limpeza; transparente,200,16,2,Capinha Anti-Oleo Galaxy S10,1,8
-104,Com suporte para cartões e dinheiro; prática,80,38,2,Capinha Wallet Samsung A52,1,19
-105,Proteção contra arranhões; material durável; elegante,90,34,2,Capinha Anti-Arranhão iPhone 12,1,17
-106,Design ultrafino; mantém o design original; leve,160,22,2,Capinha UltraSlim iPhone 13,1,11
-107,Proteção militar certificada; resistente a quedas,70,46,2,Capinha Militar Samsung S21,1,23
-108,Transparente com proteção UV; não amarela,180,20,2,Capinha UV Protection iPhone 14,1,10
-109,Silicone com bordas reforçadas; proteção extra,120,28,2,Capinha Reforçada Redmi Note 11,1,14
-110,Couro com fechamento magnético; estilo carteira,100,40,2,Capinha Carteira iPhone 12,1,20
-111,TPU flexível com design colorido; jovial,130,24,2,Capinha Colorida Samsung A53,1,12
-112,Com suporte para tornozeleira; esportiva,140,26,2,Capinha Esportiva com Alça iPhone SE,1,13
-113,Proteção híbrida com cores vibrantes; estilo,110,32,2,Capinha Híbrida Colorida iPhone 13,1,16
-114,Transparente com impressão personalizada; única,90,36,2,Capinha Personalizada Galaxy S21,1,18
-115,Silicone com grip texturizado; antiderrapante,150,22,2,Capinha Grip iPhone 14,1,11
-116,Proteção contra impactos; material absorvente,80,34,2,Capinha Anti-Impacto Samsung A52,1,17
-117,Design slim com proteção raised; câmera protegida,120,30,2,Capinha Raised iPhone 13,1,15
-118,Couro com detalhes em metal; premium,60,48,2,Capinha Premium iPhone 12,1,24
-119,TPU com bordas coloridas; visibilidade total,160,26,2,Capinha Borda Colorida Samsung S20,1,13
-120,Proteção total com tampa; segurança extra,70,42,2,Capinha Com Tampa iPhone 11,1,21
-121,Bluetooth 5.1; 12h autonomia; IP67,50,150,3,Caixa de Som JBL Flip 5,1,75
-122,Bluetooth 5.0; 16h autonomia; som extra bass,40,200,3,Caixa de Som Sony SRS-XB23,1,100
-123,Bluetooth 5.2; 24h autonomia; resistente à água,60,120,3,Caixa de Som Anker Soundcore 2,1,60
-124,Bluetooth 5.1; 10h autonomia; 10W RMS; IP67,70,180,3,Caixa de Som Tribit StormBox Micro,1,90
-125,Bluetooth 5.0; 6h autonomia; compacta; IPX7,80,220,3,Caixa de Som Bose SoundLink Micro,1,110
-126,Bluetooth 5.2; 8h autonomia; som claro; portátil,90,100,3,Caixa de Som Philips BT50,1,50
-127,Bluetooth 5.1; 5h autonomia; pequena e leve,100,80,3,Caixa de Som Redmi Pocket Speaker,1,40
-128,Bluetooth 5.0; 12h autonomia; 16W de potência,60,160,3,Caixa de Som Xiaomi Mi Speaker 16W,1,80
-129,Bluetooth 5.2; 5h autonomia; IP67; robusta,50,140,3,Caixa de Som JBL Go 3,1,70
-130,Bluetooth 5.1; 16h autonomia; extra bass; IP67,70,190,3,Caixa de Som Sony SRS-XB13,1,95
-131,Bluetooth 5.0; 10h autonomia; design elegante,80,130,3,Caixa de Som Edifier M1,1,65
-132,Bluetooth 5.2; 12h autonomia; som stereo; portátil,60,170,3,Caixa de Som Anker Soundcore Motion+,1,85
-133,Bluetooth 5.1; 24h autonomia; resistente a água,40,150,3,Caixa de Som Tribit XSound Go,1,75
-134,Bluetooth 5.0; 12h autonomia; 360 graus; IP54,50,240,3,Caixa de Som Bose SoundLink Revolve,1,120
-135,Bluetooth 5.2; 20h autonomia; potência 20W,70,200,3,Caixa de Som Philips TAS3205,1,100
-136,Bluetooth 5.1; 8h autonomia; econômica,90,90,3,Caixa de Som Redmi Speaker,1,45
-137,Bluetooth 5.0; 10h autonomia; som HD; compacta,100,110,3,Caixa de Som Xiaomi Speaker HD,1,55
-138,Bluetooth 5.2; 20h autonomia; power bank; IP67,60,300,3,Caixa de Som JBL Charge 5,1,150
-139,Bluetooth 5.1; 24h autonomia; extra bass; party,50,350,3,Caixa de Som Sony SRS-XB43,1,175
-140,Bluetooth 5.0; 12h autonomia; luzes LED; IP67,80,180,3,Caixa de Som Anker Soundcore Flare,1,90
-141,Bluetooth 5.2; 15h autonomia; som claro; portátil,70,160,3,Caixa de Som JBL Clip 4,1,80
-142,Bluetooth 5.1; 18h autonomia; resistente a choques,60,140,3,Caixa de Som Ultimate Ears Wonderboom 2,1,70
-143,Bluetooth 5.0; 10h autonomia; design único,90,120,3,Caixa de Som Marshall Emberton,1,60
-144,Bluetooth 5.2; 30h autonomia; power bank; robusta,40,400,3,Caixa de Som Anker Soundcore Rave,1,200
-145,Bluetooth 5.1; 12h autonomia; à prova d'água,80,130,3,Caixa de Som Sony SRS-XB33,1,65
-146,Bluetooth 5.0; 6h autonomia; mini portátil,100,70,3,Caixa de Som JBL Go 2,1,35
-147,Bluetooth 5.2; 20h autonomia; som stereo; IPX7,60,220,3,Caixa de Som Tribit StormBox,1,110
-148,Bluetooth 5.1; 8h autonomia; compacta e leve,70,100,3,Caixa de Som Bose SoundLink Color,1,50
-149,Bluetooth 5.0; 15h autonomia; resistente a água,90,150,3,Caixa de Som Philips BT6000,1,75
-150,Bluetooth 5.2; 10h autonomia; econômica; som claro,80,90,3,Caixa de Som Xiaomi Speaker Mini,1,45
-151,Bluetooth 5.1; 24h autonomia; power bank; IPX7,50,320,3,Caixa de Som JBL Pulse 4,1,160
-152,Bluetooth 5.0; 12h autonomia; luzes; party,60,280,3,Caixa de Som Sony SRS-XB32,1,140
-153,Bluetooth 5.2; 18h autonomia; som potente; portátil,70,200,3,Caixa de Som Anker Soundcore Select Pro,1,100
-154,Bluetooth 5.1; 10h autonomia; compacta; IP67,80,120,3,Caixa de Som Tribit MaxSound Plus,1,60
-155,Bluetooth 5.0; 20h autonomia; 30W; party,40,450,3,Caixa de Som JBL PartyBox 100,1,225
-156,Bluetooth 5.2; 15h autonomia; design retro; som rico,50,300,3,Caixa de Som Marshall Stockwell II,1,150
-157,Bluetooth 5.1; 12h autonomia; resistente a água,90,170,3,Caixa de Som Sony SRS-XB23,1,85
-158,Bluetooth 5.0; 8h autonomia; mini; portátil,100,80,3,Caixa de Som Anker Soundcore Mini,1,40
-159,Bluetooth 5.2; 24h autonomia; power bank; IPX7,60,250,3,Caixa de Som JBL Charge 4,1,125
-160,Bluetooth 5.1; 10h autonomia; som claro; econômica,70,110,3,Caixa de Som Philips TAS1505,1,55
-161,Bluetooth 5.0; 16h autonomia; extra bass; IP67,80,190,3,Caixa de Som Sony SRS-XB13,1,95
-162,Bluetooth 5.2; 20h autonomia; luzes LED; party,50,270,3,Caixa de Som Anker Soundcore Flare 2,1,135
-163,Bluetooth 5.1; 12h autonomia; compacta; robusta,60,140,3,Caixa de Som JBL Go 3,1,70
-164,Bluetooth 5.0; 18h autonomia; som stereo; portátil,70,160,3,Caixa de Som Tribit XSound Mega,1,80
-165,Bluetooth 5.2; 10h autonomia; design elegante,90,130,3,Caixa de Som Bose SoundLink Micro,1,65
-166,Bluetooth 5.1; 24h autonomia; resistente a água,80,200,3,Caixa de Som Sony SRS-XB33,1,100
-167,Bluetooth 5.0; 8h autonomia; mini; econômica,100,70,3,Caixa de Som Xiaomi Speaker Lite,1,35
-168,Bluetooth 5.2; 15h autonomia; power bank; IP67,60,230,3,Caixa de Som JBL Charge 3,1,115
-169,Bluetooth 5.1; 20h autonomia; som potente; party,50,350,3,Caixa de Som Anker Soundcore Rave Mini,1,175
-170,Bluetooth 5.0; 12h autonomia; compacta; IPX7,70,150,3,Caixa de Som Tribit StormBox Micro 2,1,75
-171,Bluetooth 5.2; 10h autonomia; design inovador,80,120,3,Caixa de Som Bose SoundLink Revolve+,1,60
-172,Bluetooth 5.1; 16h autonomia; extra bass; IP67,60,180,3,Caixa de Som Sony SRS-XB23,1,90
-173,Bluetooth 5.0; 8h autonomia; portátil e leve,90,100,3,Caixa de Som JBL Clip 3,1,50
-174,Bluetooth 5.2; 24h autonomia; power bank; robusta,70,260,3,Caixa de Som Anker Soundcore 3,1,130
-175,Bluetooth 5.1; 12h autonomia; resistente a choques,80,140,3,Caixa de Som Ultimate Ears Boom 3,1,70
-176,Bluetooth 5.0; 20h autonomia; som stereo; IP54,50,300,3,Caixa de Som Marshall Kilburn II,1,150
-177,Bluetooth 5.2; 15h autonomia; luzes; party,60,220,3,Caixa de Som JBL Pulse 3,1,110
-178,Bluetooth 5.1; 10h autonomia; compacta; econômica,70,90,3,Caixa de Som Philips TAS1005,1,45
-179,Bluetooth 5.0; 18h autonomia; som claro; portátil,80,170,3,Caixa de Som Sony SRS-XB12,1,85
-180,Bluetooth 5.2; 12h autonomia; design moderno,90,130,3,Caixa de Som Anker Soundcore Icon,1,65
-181,Vidro temperado 9H; proteção contra riscos; fácil instalação,200,15,4,Película Vidro 9H iPhone 13,1,7
-182,Híbrida; resistente a trincas e impactos; flexível,150,20,4,Película Híbrida Samsung A52,1,10
-183,Privacy; limita ângulo de visão; proteção contra espiões,100,25,4,Película Privacy iPhone 12,1,12
-184,Matte; anti-reflexo; reduz brilho; toque suave,180,18,4,Película Matte iPhone 12,1,9
-185,Clear; alta transparência; mantém cores originais,200,12,4,Película Clear Samsung S10,1,6
-186,3D; bordas curvadas; cobertura total; fácil aplicação,120,22,4,Película 3D Edge to Edge iPhone 14,1,11
-187,Nano liquid; revestimento líquido; resistência a riscos,160,28,4,Película Nano Liquid Revestimento,1,14
-188,Hidrogel; flexível; auto-cura; fácil remoção,140,24,4,Película Hidrogel Galaxy S21,1,12
-189,Anti-blue; filtra luz azul; reduz cansaço visual,130,20,4,Película Anti-Blue iPhone SE,1,10
-190,Genérica; vidro temperado 9H; proteção básica,200,10,4,Película Protetora Genérica 9H,1,5
-191,Ultra clear; transparência máxima; invisível,150,16,4,Película Ultra Clear iPhone 11,1,8
-192,Anti-reflexo; reduz reflexos; ideal para outdoors,120,22,4,Película Anti-Reflexo Samsung S20,1,11
-193,Privacy; proteção de privacidade; impede visão lateral,100,26,4,Película Privacy Galaxy A51,1,13
-194,Matte; acabamento fosco; anti-impressões digitais,180,20,4,Película Matte iPhone 13,1,10
-195,Clear; proteção contra riscos; mantém touch sensitivity,200,14,4,Película Clear iPhone 14,1,7
-196,3D; cobertura total; bordas curvadas; vidro temperado,120,24,4,Película 3D Samsung S21,1,12
-197,Liquid glass; revestimento nanotecnológico; durable,160,30,4,Película Liquid Glass iPhone 12,1,15
-198,Hidrogel; flexível; resistente a impactos; fácil aplicação,140,26,4,Película Hidrogel iPhone 13,1,13
-199,Anti-blue; proteção contra luz azul; mantém cores,130,18,4,Película Anti-Blue Samsung S10,1,9
-200,HD; alta definição; clareza óptica; invisível,200,12,4,Película Protetora HD iPhone 12,1,6
-201,Anti-espiao; privacy; visão apenas frontal,100,28,4,Película Anti-Espiao iPhone 13,1,14
-202,Matte anti-reflexo; reduz brilho; toque suave,150,22,4,Película Matte Anti-Reflexo Samsung A52,1,11
-203,Clear com oleofóbico; resistente a manchas,180,16,4,Película Clear Oleofóbica iPhone 14,1,8
-204,3D curvo; bordas invisíveis; cobertura total,120,26,4,Película 3D Curvo Galaxy S21,1,13
-205,Nano liquid; proteção contra riscos; invisível,160,32,4,Película Nano Liquid Proteção,1,16
-206,Hidrogel com auto-cura; remove riscos leves,140,28,4,Película Hidrogel Auto-Cura iPhone 12,1,14
-207,Anti-blue com HD; proteção visual e clareza,130,24,4,Película Anti-Blue HD Samsung S20,1,12
-208,Genérica com fácil aplicação; kit completo,200,14,4,Película Genérica Fácil Aplicação,1,7
-209,Ultra thin; ultrafina; mantém sensibilidade tátil,150,18,4,Película Ultra Thin iPhone 13,1,9
-210,Privacy com vidro temperado; dupla proteção,100,30,4,Película Privacy Vidro iPhone 14,1,15
-211,Matte com oleofóbico; anti-manchas,120,20,4,Película Matte Oleofóbico Samsung A53,1,10
-212,Clear anti-impressões; resistente a digitais,180,14,4,Película Clear Anti-Impressões iPhone 11,1,7
-213,3D com hidrogel; flexível e resistente,140,26,4,Película 3D Hidrogel Galaxy S22,1,13
-214,Liquid glass com proteção UV,160,22,4,Película Liquid Glass UV Proteção,1,11
-215,Hidrogel com anti-blue; proteção completa,130,28,4,Película Hidrogel Anti-Blue iPhone 13,1,14
-216,Anti-espiao com matte; privacidade e anti-reflexo,100,32,4,Película Anti-Espiao Matte Samsung S21,1,16
-217,Clear com alta transparência; fácil aplicação,200,16,4,Película Clear Alta Transparência,1,8
-218,3D com vidro temperado; resistência a impactos,120,24,4,Película 3D Vidro Temperado iPhone 14,1,12
-219,Nano liquid com hidrofóbico; repele água,160,30,4,Película Nano Liquid Hidrofóbico,1,15
-220,Hidrogel com claro; invisível e protetor,140,26,4,Película Hidrogel Claro Galaxy A52,1,13
-221,Anti-blue com privacy; dupla proteção,130,34,4,Película Anti-Blue Privacy iPhone 12,1,17
-222,Genérica com anti-riscos; econômica,200,12,4,Película Genérica Anti-Riscos,1,6
-223,Ultra clear com oleofóbico; anti-manchas,150,20,4,Película Ultra Clear Oleofóbico Samsung S20,1,10
-224,Privacy com fácil remoção; sem resíduos,100,26,4,Película Privacy Fácil Remoção iPhone 13,1,13
-225,Matte com HD; clareza e anti-reflexo,120,22,4,Película Matte HD Galaxy A51,1,11
-226,Clear com anti-espiao; proteção visual,180,28,4,Película Clear Anti-Espiao iPhone 14,1,14
-227,3D com nano coating; proteção avançada,140,30,4,Película 3D Nano Coating Samsung S21,1,15
-228,Liquid glass com auto-cura; regeneração,160,32,4,Película Liquid Glass Auto-Cura,1,16
-229,Hidrogel com anti-impressões; limpa facilmente,130,24,4,Película Hidrogel Anti-Impressões,1,12
-230,Anti-blue com fácil aplicação; kit incluso,100,20,4,Película Anti-Blue Fácil Aplicação,1,10
-231,Genérica com hidrogel; flexível,200,18,4,Película Genérica Hidrogel,1,9
-232,Ultra thin com privacy; ultrafina e privada,150,26,4,Película Ultra Thin Privacy iPhone 12,1,13
-233,Matte com anti-espiao; reduz brilho e protege,120,30,4,Película Matte Anti-Espiao Samsung A52,1,15
-234,Clear com hidrofóbico; repele líquidos,180,22,4,Película Clear Hidrofóbico iPhone 13,1,11
-235,3D com anti-blue; proteção total,140,28,4,Película 3D Anti-Blue Galaxy S21,1,14
-236,Liquid glass com privacy; invisível e privado,160,34,4,Película Liquid Glass Privacy,1,17
-237,Hidrogel com ultra clear; máxima transparência,130,26,4,Película Hidrogel Ultra Clear,1,13
-238,Anti-espiao com fácil aplicação; sem bolhas,100,24,4,Película Anti-Espiao Fácil Aplicação,1,12
-239,Genérica com matte; anti-reflexo econômico,200,16,4,Película Genérica Matte,1,8
-240,Ultra thin com anti-riscos; proteção slim,150,20,4,Película Ultra Thin Anti-Riscos iPhone 14,1,10
-241,10000mAh; USB-C; PD; compacto,100,80,5,Carregador Power Bank Anker 10000mAh,1,40
-242,GaN; 65W; PD; PPS; compacto,80,120,5,Carregador GaN 65W Ugreen,1,60
-243,Veicular; 30W; PD; QC3.0; rápido,120,50,5,Carregador Veicular Baseus 30W PD,1,25
-244,Wireless; 15W; MagSafe; compatível iPhone,90,100,5,Carregador Wireless 15W MagSafe Style,1,50
-245,Cabo; Lightning; 1m; MFi; revestimento trançado,200,25,5,Carregador Cabo Lightning 1m MFi,1,12
-246,Cabo; USB-C; 1.2m; nylon; rápido,180,20,5,Carregador Cabo USB-C 1.2m Nylon,1,10
-247,Turbo; 20W; PD; carregamento rápido,150,40,5,Carregador Turbo 20W PD,1,20
-248,20000mAh; USB-C; PD; alta capacidade,70,120,5,Carregador Power Bank Xiaomi 20000mAh,1,60
-249,Base; wireless; 3 em 1; phone; watch; buds,60,150,5,Carregador Base de Carregamento Sem Fio 3 em 1,1,75
-250,Hub; 4 portas USB; carregamento múltiplo,100,60,5,Carregador Hub Carregador 4x USB,1,30
-251,10000mAh; USB-C; PD; slim design,80,90,5,Carregador Power Bank Samsung 10000mAh,1,45
-252,GaN; 100W; PD; PPS; 2 portas,50,180,5,Carregador GaN 100W Baseus,1,90
-253,Veicular; 40W; PD; QC4.0; rápido,110,70,5,Carregador Veicular Anker 40W,1,35
-254,Wireless; 10W; Qi; compatível universal,130,60,5,Carregador Wireless 10W Xiaomi,1,30
-255,Cabo; USB-C to Lightning; 1m; rápido,200,30,5,Carregador Cabo USB-C to Lightning 1m,1,15
-256,Cabo; USB-A; 2m; durable; carregamento lento,180,15,5,Carregador Cabo USB-A 2m,1,7
-257,Turbo; 30W; PD; carregamento rápido,140,50,5,Carregador Turbo 30W PD,1,25
-258,10000mAh; USB-C; PD; compacto,90,80,5,Carregador Power Bank Aukey 10000mAh,1,40
-259,Base; wireless; Belkin; 3 em 1; premium,40,200,5,Carregador Base Sem Fio Belkin,1,100
-260,Hub; USB-C; 7 em 1; HDMI; PD; USB,60,250,5,Carregador Hub USB-C 7 em 1,1,125
-261,10000mAh; wireless; power bank com Qi,70,130,5,Carregador Power Bank Wireless Anker,1,65
-262,GaN; 45W; PD; compacto; viagem,100,100,5,Carregador GaN 45W Ugreen,1,50
-263,Veicular; 20W; PD; rápido; compacto,120,40,5,Carregador Veicular Aukey 20W PD,1,20
-264,Wireless; 5W; Qi; básico; econômico,150,30,5,Carregador Wireless 5W Genérico,1,15
-265,Cabo; Lightning; 2m; MFi; durable,200,35,5,Carregador Cabo Lightning 2m MFi,1,17
-266,Cabo; USB-C; 2m; nylon; rápido,180,25,5,Carregador Cabo USB-C 2m Nylon,1,12
-267,Turbo; 18W; PD; carregamento rápido,140,35,5,Carregador Turbo 18W PD,1,17
-268,20000mAh; USB-C; PD; power bank robusto,60,140,5,Carregador Power Bank Baseus 20000mAh,1,70
-269,Base; wireless; 2 em 1; phone e watch,80,120,5,Carregador Base Sem Fio 2 em 1,1,60
-270,Hub; 3 portas USB; carregamento simultâneo,100,50,5,Carregador Hub 3x USB,1,25
-271,10000mAh; USB-C; PD; design elegante,90,85,5,Carregador Power Bank Xiaomi 10000mAh,1,42
-272,GaN; 30W; PD; compacto; viagem,110,80,5,Carregador GaN 30W Anker,1,40
-273,Veicular; 15W; PD; econômico,130,30,5,Carregador Veicular Genérico 15W PD,1,15
-274,Wireless; 7.5W; Qi; compatível iPhone,140,50,5,Carregador Wireless 7.5W iPhone,1,25
-275,Cabo; USB-C to USB-C; 1m; PD; rápido,200,28,5,Carregador Cabo USB-C to USB-C 1m,1,14
-276,Cabo; USB-A to Micro-USB; 2m; lento,180,12,5,Carregador Cabo USB-A to Micro-USB 2m,1,6
-277,Turbo; 25W; PD; carregamento rápido,150,45,5,Carregador Turbo 25W PD,1,22
-278,10000mAh; USB-A; power bank básico,100,60,5,Carregador Power Bank Genérico 10000mAh,1,30
-279,Base; wireless; single; Qi; 10W,120,70,5,Carregador Base Sem Fio Single,1,35
-280,Hub; USB-C; 5 em 1; PD; HDMI; USB,60,180,5,Carregador Hub USB-C 5 em 1,1,90
-281,10000mAh; USB-C; PD; à prova d'água,70,110,5,Carregador Power Bank À Prova D'água,1,55
-282,GaN; 20W; PD; ultra compacto,100,60,5,Carregador GaN 20W Ugreen,1,30
-283,Veicular; 10W; USB-A; lento,130,20,5,Carregador Veicular 10W USB-A,1,10
-284,Wireless; 15W; Samsung Fast Charge,90,90,5,Carregador Wireless 15W Samsung,1,45
-285,Cabo; USB-C to Lightning; 2m; MFi; rápido,200,40,5,Carregador Cabo USB-C to Lightning 2m,1,20
-286,Cabo; USB-A to Lightning; 1m; MFi; básico,180,22,5,Carregador Cabo USB-A to Lightning 1m,1,11
-287,Turbo; 40W; PD; carregamento rápido,140,70,5,Carregador Turbo 40W PD,1,35
-288,20000mAh; USB-C; PD; power bank slim,60,130,5,Carregador Power Bank Slim 20000mAh,1,65
-289,Base; wireless; 3 em 1; premium; alumínio,40,220,5,Carregador Base Sem Fio 3 em 1 Premium,1,110
-290,Hub; 6 portas USB; carregamento múltiplo,100,80,5,Carregador Hub 6x USB,1,40
-291,10000mAh; USB-C; PD; com display,90,100,5,Carregador Power Bank Com Display,1,50
-292,GaN; 65W; PD; 3 portas; viagem,80,150,5,Carregador GaN 65W 3 Portas,1,75
-293,Veicular; 45W; PD; rápido; dual port,110,90,5,Carregador Veicular 45W PD,1,45
-294,Wireless; 10W; Qi; com ventoinha; resfriamento,120,60,5,Carregador Wireless Com Ventoinha,1,30
-295,Cabo; USB-C to USB-C; 2m; PD; rápido,200,35,5,Carregador Cabo USB-C to USB-C 2m,1,17
-296,Cabo; USB-A to USB-C; 1m; básico,180,18,5,Carregador Cabo USB-A to USB-C 1m,1,9
-297,Turbo; 15W; PD; carregamento rápido,150,30,5,Carregador Turbo 15W PD,1,15
-298,10000mAh; USB-A; power bank econômico,100,50,5,Carregador Power Bank Econômico 10000mAh,1,25
-299,Base; wireless; 2 em 1; phone e buds,80,100,5,Carregador Base Sem Fio 2 em 1,1,50
-300,Hub; USB-C; 4 em 1; PD; HDMI; USB; Ethernet,60,200,5,Carregador Hub USB-C 4 em 1,1,100
-301,Agua geladinha;  melhor agua da cidade,75,2,1,Agua mineral,1,1.50
-302,Agua geladinha,76,2,1,Agua mineral,1,"1,50"
-303,a,1,1,1,a,1,1
+ProdutoID,Descricao,Quantidade,PreçoDeVenda,Categoria,Nome,UsuarioID,PreçoDeCusto
+1,Remax Pro32,69,136,Cabos,Cabos Remax Pro32,5,40
+2,Case-Mate S45,84,189,Capas,Capas Case-Mate S45,1,14
+3,Anker Gen94,127,232,Fones,Fones Anker Gen94,1,24
+4,Whitestone Pro61,53,165,Peliculas,Peliculas Whitestone Pro61,4,37
+5,Belkin Pro33,13,166,Carregadores,Carregadores Belkin Pro33,3,81
+6,UGREEN Lite14,54,128,Cabos,Cabos UGREEN Lite14,2,11
+7,Spigen Plus66,123,255,Capas,Capas Spigen Plus66,4,60
+8,JBL Pro7,176,190,Fones,Fones JBL Pro7,3,36
+9,Nillkin Gen36,180,77,Peliculas,Peliculas Nillkin Gen36,3,23
+10,Baseus Max77,64,212,Carregadores,Carregadores Baseus Max77,5,28
+11,Apple S2,95,199,Cabos,Cabos Apple S2,3,25
+12,OtterBox Pro51,183,261,Capas,Capas OtterBox Pro51,1,77
+13,Sony Gen71,59,325,Fones,Fones Sony Gen71,4,121
+14,X-LEVEL Pro9,141,81,Peliculas,Peliculas X-LEVEL Pro9,1,32
+15,Anker Plus39,83,154,Carregadores,Carregadores Anker Plus39,2,61
+16,ESR Max12,101,111,Capas,Capas ESR Max12,5,28
+17,Belkin Gen58,54,161,Cabos,Cabos Belkin Gen58,3,56
+18,Caseology Gen3,123,199,Capas,Capas Caseology Gen3,4,59
+19,Tronsmart S8,96,197,Acessórios,Acessórios Tronsmart S8,1,35
+20,UGREEN Pro43,167,135,Acessórios,Acessórios UGREEN Pro43,4,25
+21,Benks Plus95,85,76,Peliculas,Peliculas Benks Plus95,2,13
+22,Baseus Gen46,39,176,Carregadores,Carregadores Baseus Gen46,2,55
+23,Spigen Max33,42,152,Capas,Capas Spigen Max33,5,30
+24,Remax Gen49,49,107,Cabos,Cabos Remax Gen49,4,27
+25,Pitaka Pro60,36,287,Capas,Capas Pitaka Pro60,2,77
+26,UAG Plus1,138,263,Capas,Capas UAG Plus1,3,63
+27,Benks Gen27,153,65,Peliculas,Peliculas Benks Gen27,1,12
+28,ProCase S18,103,156,Capas,Capas ProCase S18,4,44
+29,Anker Gen90,95,205,Fones,Fones Anker Gen90,5,70
+30,Belkin Max20,177,113,Acessórios,Acessórios Belkin Max20,2,16
+31,Spigen Gen62,21,170,Capas,Capas Spigen Gen62,5,26
+32,ESR Plus44,162,55,Peliculas,Peliculas ESR Plus44,1,10
+33,Baseus Gen40,28,198,Carregadores,Carregadores Baseus Gen40,2,70
+34,X-LEVEL Gen50,176,67,Cabos,Cabos X-LEVEL Gen50,4,15
+35,OtterBox Lite88,53,236,Capas,Capas OtterBox Lite88,3,64
+36,UGREEN Pro22,10,150,Cabos,Cabos UGREEN Pro22,4,26
+37,JBL Gen41,101,201,Fones,Fones JBL Gen41,5,28
+38,Spigen Plus55,61,159,Capas,Capas Spigen Plus55,1,39
+39,Satechi Max13,112,176,Acessórios,Acessórios Satechi Max13,2,56
+40,Pelican Pro79,137,79,Peliculas,Peliculas Pelican Pro79,5,20
+41,Mophie Gen48,93,206,Acessórios,Acessórios Mophie Gen48,3,50
+42,ESR Lite8,49,139,Capas,Capas ESR Lite8,3,22
+43,Tronsmart Max65,100,175,Acessórios,Acessórios Tronsmart Max65,1,46
+44,Whitestone Gen32,36,180,Peliculas,Peliculas Whitestone Gen32,2,85
+45,Pitaka Gen19,168,354,Capas,Capas Pitaka Gen19,3,82
+46,Olixar Plus11,178,56,Acessórios,Acessórios Olixar Plus11,2,18
+47,Griffin Pro7,173,101,Acessórios,Acessórios Griffin Pro7,5,12
+48,ESR Max72,16,109,Capas,Capas ESR Max72,4,29
+49,Honor Plus14,136,122,Carregadores,Carregadores Honor Plus14,1,34
+50,Belkin Gen6,107,109,Cabos,Cabos Belkin Gen6,5,21

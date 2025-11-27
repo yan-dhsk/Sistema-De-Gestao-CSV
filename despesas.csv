@@ -1,6 +1,59 @@
 data,tipo,custo,nome,usuario
-24-11-2025 10:57:10,teste,2,Teste,Alguem
-24-11-2025 10:58:14,produto,555,seila,vinicius
-24-11-2025 21:19:28,Mensal,10,Salario,vinicius
-24-11-2025 21:20:53,Mensal,50,Conta de agua,vinicius
-24-11-2025 21:21:33,Mensal,86,Conta energia,vinicius
+2023-06-24,produto,640,Capas Spigen Gen62,ana.pereira
+2023-04-06,produto,860,Capas Spigen Plus55,joao.silva
+2023-01-04,produto,1098,Fones Anker Gen90,maria.oliveira
+2023-02-09,produto,300,Carregadores Baseus Gen40,carlos.souza
+2023-07-12,produto,1304,Carregadores Belkin Pro33,loja_admin
+2023-09-02,produto,594,Cabos UGREEN Lite14,ana.pereira
+2023-11-11,produto,840,Capas Spigen Plus66,maria.oliveira
+2023-05-21,produto,1188,Fones JBL Pro7,carlos.souza
+2023-11-06,produto,2760,Peliculas Benks Plus95,joao.silva
+2023-05-13,produto,1400,Acessórios UGREEN Pro43,loja_admin
+2023-08-10,produto,2375,Cabos Apple S2,ana.pereira
+2023-06-12,produto,949,Capas OtterBox Pro51,maria.oliveira
+2023-12-06,produto,849,Fones Sony Gen71,carlos.souza
+2023-09-20,produto,672,Peliculas X-LEVEL Pro9,joao.silva
+2023-10-08,produto,902,Carregadores Anker Plus39,ana.pereira
+2023-11-30,produto,1437,Capas ESR Max12,maria.oliveira
+2023-05-28,produto,3024,Capas Case-Mate S45,joao.silva
+2023-08-03,produto,1080,Capas Caseology Gen3,carlos.souza
+2023-06-07,produto,1700,Acessórios Tronsmart S8,loja_admin
+2023-02-22,produto,425,Capas ProCase S18,ana.pereira
+2024-06-16,produto,180,Capas Pitaka Pro60,maria.oliveira
+2024-09-01,produto,968,Carregadores Baseus Gen46,loja_admin
+2024-07-23,produto,620,Capas Spigen Max33,carlos.souza
+2024-08-24,produto,1323,Cabos Remax Gen49,ana.pereira
+2024-06-08,produto,1856,Capas UAG Plus1,joao.silva
+2024-05-03,produto,676,Acessórios Belkin Max20,maria.oliveira
+2024-08-05,produto,228,Capas Pitaka Gen19,carlos.souza
+2024-10-01,produto,671,Capas OtterBox Lite88,loja_admin
+2024-12-12,produto,600,Peliculas Whitestone Gen32,maria.oliveira
+2024-10-24,produto,360,Capas ESR Max72,ana.pereira
+2024-09-28,produto,200,Cabos UGREEN Pro22,carlos.souza
+2024-11-11,produto,642,Acessórios Mophie Gen48,joao.silva
+2024-05-10,produto,1600,Carregadores Anker Plus39,ana.pereira
+2024-03-21,produto,320,Peliculas Pelican Pro79,maria.oliveira
+2024-01-10,produto,230,Capas ESR Lite8,carlos.souza
+2024-03-28,produto,600,Acessórios Tronsmart Max65,joao.silva
+2024-04-14,produto,208,Acessórios Olixar Plus11,maria.oliveira
+2024-02-03,produto,780,Peliculas Whitestone Pro61,ana.pereira
+2024-04-01,produto,540,Cabos Belkin Gen58,carlos.souza
+2024-03-08,produto,360,Capas Spigen Gen62,joao.silva
+2024-03-20,produto,340,Peliculas ESR Plus44,maria.oliveira
+2024-04-24,produto,1380,Capas UAG Plus1,ana.pereira
+2025-02-11,produto,360,Acessórios Griffin Pro7,carlos.souza
+2025-05-04,produto,744,Carregadores Honor Plus14,joao.silva
+2025-03-03,produto,306,Acessórios Olixar Plus11,maria.oliveira
+2025-07-16,produto,456,Cabos Belkin Gen6,ana.pereira
+2024-04-26,produto,240,Cabos Remax Pro32,carlos.souza
+2024-01-25,produto,450,Capas Spigen Plus55,loja_admin
+2024-02-14,aluguel,3500,Pagamento mensal do ponto comercial,loja_admin
+2024-02-28,energia,780,Conta de energia da loja,loja_admin
+2024-03-11,internet,150,Plano de internet fibra 300mbps,ana.pereira
+2024-03-23,agua,112,Conta de água,loja_admin
+2024-04-07,marketing,450,Anúncios Instagram e Facebook,maria.oliveira
+2024-04-19,manutenção,320,Manutenção geral das prateleiras,carlos.souza
+2024-05-03,limpeza,200,Serviço de limpeza mensal,ana.pereira
+2024-05-21,embalagens,280,Compra de sacolas e embalagens,joao.silva
+2024-06-02,software,129,Assinatura do sistema de gestão,maria.oliveira
+2024-06-15,contabilidade,900,Pagamento da contabilidade mensal,loja_admin

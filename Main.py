@@ -3,6 +3,7 @@ import datetime
 import modulo_vendas
 import Login
 import modulo_despesas
+import modulo_relatorio
 
 def vendas(usuario):
     while True:
@@ -15,7 +16,7 @@ def vendas(usuario):
             escolha = -1
         if escolha == 0:
             print("==================================================================")
-            menu()
+            menu(usuario)
             break
         elif escolha == 1:
             novaVenda = [0]
@@ -77,7 +78,7 @@ def vendas(usuario):
             novaVenda.append(quantidade)
             novaVenda.append(preço)
             novaVenda.append(total)
-            novaVenda.append(1)
+            novaVenda.append(usuario)
             novaVenda.append(cliente)
             novaVenda.append(metodo)
             novaVenda.append(data)
@@ -153,14 +154,52 @@ def vendas(usuario):
             pass
 
 def relatorio(usuario):
-    print("Sentimos muito, esta área ainda esta em desenvolvimento!")
-    print("==================================================================")
-    menu(usuario)
+    while True: 
+        print("Bem-Vindo a seção de Relatórios!")
+        escolha = input("1 - Gerar Arquivos de Relatório\n2 - Imprimir o Último Relatório Gerado\n0 - Retornar ao menu principal\nPorfavor selecione sua opção: ") 
+        if escolha == '0':
+            print("==================================================================")
+            menu(usuario)
+            break
+
+        elif escolha == '1':
+            print("==================================================================")
+            inicio = input("Digite a data de Início do período (AAAA-MM-DD): ")
+            fim = input("Digite a data de Fim do período (AAAA-MM-DD): ")
+            if modulo_relatorio.verificarFormato(inicio) == 2 or modulo_relatorio.verificarFormato(fim) == 2:
+                print("==================================================================")
+                print("O formato da data é inválido! Use AAAA-MM-DD.")
+                continue 
+            print("Gerando arquivos de relatório...") 
+            resultadoBi = modulo_relatorio.montarBi(inicio, fim)
+            modulo_relatorio.criarRelatorio(inicio, fim)
+            if resultadoBi == 3:
+                print("ATENÇÃO: Não houve vendas no período especificado.")
+                continue
+            print("Arquivos de Relatório gerados com sucesso!")
+            print("==================================================================")
+
+        elif escolha == '2':
+            print("==================================================================")
+            try:
+                linhas = modulo_relatorio.carregarRelatorio()
+                if not linhas:
+                    print("ATENÇÃO: O arquivo de relatório está vazio ou não foi gerado.")
+                else:
+                    for linha in linhas:
+                        print(linha.strip())
+            except Exception as e:
+                print(f"ERRO: Não foi possível ler o relatório. Gere o relatório (Opção 1) primeiro.")
+            
+            print("==================================================================")
+    
+        else:
+            print("Opção Inválida! Porfavor selecione uma opção válida.\n")
 
 def despesas(usuario):
     while True:
         print("Bem-Vindo a seção de despesas!")
-        escolha = int(input("1 - Adicionar novas despesas\n2 - Excluir despesas\n3 - Consultar todos as despesas\n4 - Consultar despesas de dia especifico\n5 - Consultar pro usuario\n6 - Editar despesas\n0 - Voltar ao menu\n"))
+        escolha = int(input("1 - Adicionar novas despesas\n2 - Excluir despesas\n3 - Consultar todos as despesas\n4 - Consultar despesas de dia especifico\n5 - Consultar por usuario\n6 - Editar despesas\n0 - Voltar ao menu\n"))
         if escolha == 0:
                 print("==================================================================")
                 menu(usuario)
@@ -179,7 +218,7 @@ def despesas(usuario):
             print("==================================================================")
 
         elif escolha == 2:
-            data=input("Digite a data conforme o exemplo: (19-07-2021):\n")
+            data=input("Digite a data conforme o exemplo: (2021-07-19):\n")
             despesas=modulo_despesas.editar_despesas1(data)
             if despesas == 0:
                 print("==================================================================")
@@ -207,7 +246,7 @@ def despesas(usuario):
         
         elif escolha == 4:
             print("==================================================================")
-            data=input("Digite a data conforme o exemplo: (19-07-2021): ")
+            data=input("Digite a data conforme o exemplo: (2021-07-19): ")
             despesas=modulo_despesas.ver_despesas(data)
             if despesas == 0:
                 print("==================================================================")
@@ -234,7 +273,7 @@ def despesas(usuario):
         elif escolha == 6:
             print("==================================================================")
             opcao=int(input("Oque deseja editar?\n1 - Tipo\n2 - Custo\n3 - Nome\n4 - Usuario\n"))
-            data=input("Digite a data conforme o exemplo: (19-07-2021):\n")
+            data=input("Digite a data conforme o exemplo: (2021-07-19):\n")
             despesas=modulo_despesas.editar_despesas1(data)
             if despesas == 0:
                 print("==================================================================")
@@ -275,7 +314,7 @@ def produto(usuario):
             print("==================================================================")
         elif escolha == 2:
             print("==================================================================")
-            ordem = ["Descrição", "Quantidade", "Preço", "ID de categoria", "Nome", "ID de usuario","Preço de custo"]
+            ordem = ["Descrição", "Quantidade", "Preço", "Categoria", "Nome", "ID do usuario que está realizando a adição","Preço de custo"]
             quantidade = int(input("Quantos produtos você deseja adicionar? "))
             for i in range(quantidade):
                 novo_produto_info = []
@@ -390,22 +429,28 @@ def login():
         print("==================================================================")
         print("Login efetuado com sucesso!")
         print("==================================================================")
-        return menu(usuario)
+        controle = menu(usuario)
+        if controle == 1:
+            return 1
+        else:
+            return 0
     elif resul == 1:
         print("Usuario ou senha incorretos!")
 
 def menu_login():
     print("================================Bem-Vindo================================")
     opcao=int(input("Oque deseja fazer?\n1-Login\n2-Registrar novo usuario\n0-Sair\nDigite o numero da opção desejada:\n"))
-    if opcao==1:
+    if opcao==0:
+        return
+    elif opcao==1:
         opcao=login()
+        if opcao == 0:
+            return
     elif opcao==2:
         registrar()
     else:
         print("==================================================================")
         print("Valor invalido")
-    if opcao==0:
-        return 0
     menu_login()
 
 Login

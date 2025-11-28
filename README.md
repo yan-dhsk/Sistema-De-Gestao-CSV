@@ -12,17 +12,15 @@ DIAGRAMA DE CLASSE
 
 
 FUNCIONALIDADES
-- Gestão de Produtos (implementado) - Cadastro e consulta de produtos, com catálogo informando preço, quantidade, produtos mais e menos vendidos, função de busca, etc.
+- Gestão de Produtos - Cadastro e consulta de produtos, com catálogo informando preço, quantidade, produtos mais e menos vendidos, função de busca, etc.
 
-- Registro de Vendas (em desenvolvimento) - Registro de vendas de produtos, incluindo método de pagamento, data, cliente etc.
+- Registro de Vendas - Registro de vendas de produtos, incluindo método de pagamento, data, cliente etc.
 
-- Cadastro de Clientes (em desenvolvimento) - Base de dados de clientes com histórico de compras individual.
+- Cadastro de Clientes - Base de dados de clientes com histórico de compras individual.
 
-- Controle Financeiro (em desenvolvimento) - Registro de despesas e cálculo de lucros.
+- Controle Financeiro - Registro de despesas e cálculo de lucros.
 
-- Sistema de Relatórios (em desenvolvimento) - Análise de vendas e geração de dados em CSV para futura elaboração de dashboards e relatórios no Power BI.
-
-- Backup de Dados (em desenvolvimento) - Backup em nuvem dos arquivos Csv.
+- Sistema de Relatórios - Análise de vendas e geração de dados em CSV para futura elaboração de dashboards e relatórios no Power BI.
 
 TECNOLOGIAS UTILIZADAS
 - Python 3
